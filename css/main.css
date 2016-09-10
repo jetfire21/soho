@@ -483,5 +483,10 @@ footer .soc-network a {
   overflow: hidden;
   margin-top: 45px;
 }
+.block-media .loading-link {
+  padding-bottom: 150px;
+  text-align: center;
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */
