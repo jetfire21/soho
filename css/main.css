@@ -1,0 +1,487 @@
+header, a, a:hover {
+  color: #fff;
+}
+
+.empty {
+  height: 150px;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  font: 20px "Montserrat";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+a:hover, a:focus {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+}
+
+h2 {
+  font: 88px "PlayfairDisplay-Black";
+  margin-bottom: 20px;
+}
+
+.dark-bg {
+  background-color: rgba(32, 32, 32, 0.8) !important;
+}
+
+/* size for lg screens */
+header {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.bg-color {
+  background-color: rgba(32, 32, 32, 0.4);
+}
+
+.bg-color, #owl-demo .item > img {
+  height: 1080px;
+}
+
+.btn-bar-top {
+  position: absolute;
+  top: 55px;
+  width: 50px;
+  left: 6%;
+  cursor: pointer;
+}
+
+h3.main-name {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font: 40px "Ailerons";
+  padding-top: 50px;
+}
+
+.slogan {
+  margin-left: 21%;
+  width: 430px;
+  position: relative;
+  top: 357px;
+}
+.slogan h3, .slogan .btn-media {
+  position: absolute;
+}
+.slogan h3 {
+  font: 40px "PlayfairDisplayBold";
+}
+.slogan h3 span {
+  font-family: "PlayfairDisplayRegular";
+}
+.slogan .btn-media {
+  top: 358px;
+}
+.slogan .btn-media img {
+  margin-right: 7px;
+  margin-top: -4px;
+}
+
+.big-btn-bar {
+  position: absolute;
+  left: 100px;
+  top: 46.5%;
+  cursor: pointer;
+}
+
+.btn-media {
+  font: 17px "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.btn-media a {
+  color: #fff;
+  font-size: 17px;
+}
+
+.top-menu {
+  display: none;
+  position: absolute;
+  top: 36%;
+  background-color: #fff;
+  width: 100%;
+}
+.top-menu .close-top-menu {
+  top: 123px;
+  position: absolute;
+  left: 6%;
+  cursor: pointer;
+}
+.top-menu ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+.top-menu ul li {
+  padding-right: 70px;
+}
+.top-menu ul li:hover .vert-line {
+  visibility: visible;
+}
+.top-menu ul li:hover a {
+  color: #000;
+  text-decoration: none;
+}
+.top-menu ul li:last-child {
+  padding-right: 0;
+}
+.top-menu a {
+  font: 20px "Montserrat";
+  text-transform: uppercase;
+  color: #999;
+}
+.top-menu .vert-line {
+  visibility: hidden;
+  height: 65px;
+  width: 3px;
+  background-color: #000;
+  display: block;
+  margin: 30px auto 40px auto;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+}
+.mob-menu ul {
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 0;
+}
+.mob-menu li {
+  margin-top: 20px;
+}
+.mob-menu a {
+  font: 20px "Montserrat";
+  text-transform: uppercase;
+  color: #999;
+}
+.mob-menu a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.mob-menu a {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.mob-menu li:hover a:before, .mob-menu li:hover a:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 65px;
+  height: 2px;
+  vertical-align: middle;
+  background: black;
+  margin: 0 15px 0 5px;
+}
+.mob-menu .close-mob-menu {
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+  bottom: 10%;
+  margin-left: -21px;
+}
+
+.wrap-a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+}
+
+#owl-demo .item > img {
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  width: 100%;
+}
+
+header .owl-controls {
+  position: absolute;
+  right: 0;
+  top: 34%;
+}
+header .owl-page {
+  width: 15px;
+  height: 1px;
+  color: blue;
+  background: #fff;
+  margin: 40px 50px 40px 0;
+  position: relative;
+}
+header .owl-page .num {
+  color: #fff;
+  font: 18px "Montserrat-Light";
+  position: absolute;
+  right: 41px;
+  top: -9px;
+  letter-spacing: 4px;
+}
+header .owl-page.active {
+  height: 4px;
+  margin: 45px 0 45px 36px;
+  width: 28px;
+}
+
+.home-movies {
+  position: relative;
+  overflow: hidden;
+}
+.home-movies .block-movies-title {
+  margin-top: 76px;
+}
+.home-movies h3, .home-movies p {
+  padding-left: 10px;
+}
+.home-movies h3 {
+  margin-top: 40px;
+}
+
+.home-movies p, .blog-main-text p, .block-media .media-category p, .block-media .media-category > div:hover p {
+  font: 18px "Montserrat";
+  letter-spacing: 12px;
+}
+
+.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3 {
+  font: 20px "Montserrat";
+  text-transform: uppercase;
+  color: #a3a3a3;
+  letter-spacing: 5px;
+}
+
+.wrap-carousel {
+  width: 1200px;
+  position: relative;
+  float: right;
+  margin-right: -92px;
+  margin-top: -190px;
+}
+
+#owl-movies .item {
+  margin-right: 40px;
+}
+#owl-movies .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#owl-movies .owl-prev, #owl-movies .owl-next {
+  background: #000;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  width: 80px;
+}
+#owl-movies .owl-prev {
+  background: url("../img/black-l-arrow.png") center center no-repeat;
+}
+#owl-movies .owl-prev:hover {
+  background: #000 url("../img/white-l-arrow.png") center center no-repeat;
+  padding: 40px 0;
+}
+#owl-movies .owl-next {
+  background: url("../img/black-r-arrow.png") center center no-repeat;
+}
+#owl-movies .owl-next:hover {
+  background: #000 url("../img/white-r-arrow.png") center center no-repeat;
+  padding: 40px 0;
+}
+#owl-movies .owl-controls {
+  position: absolute;
+  left: -34%;
+  bottom: 15%;
+}
+
+#owl-movies p, .movies-catalog p {
+  font: 20px "PlayfairDisplay-Black";
+  letter-spacing: 0;
+}
+
+.gallery {
+  position: relative;
+  padding-top: 301px;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.gallery .gal-text {
+  padding-top: 325px;
+}
+
+.wrap-gallery {
+  height: 810px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeddcd+0,f0e0d1+30,efdece+60,ecd9c8+100 */
+  background: #eeddcd;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZGRjZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2YwZTBkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2VmZGVjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2Q5YzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #eeddcd 0%, #f0e0d1 30%, #efdece 60%, #ecd9c8 100%);
+  background: -webkit-linear-gradient(top, #eeddcd 0%, #f0e0d1 30%, #efdece 60%, #ecd9c8 100%);
+  background: linear-gradient(to bottom, #eeddcd 0%, #f0e0d1 30%, #efdece 60%, #ecd9c8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeddcd', endColorstr='#ecd9c8',GradientType=0 );
+  padding-left: 49%;
+}
+.wrap-gallery h2 {
+  display: inline;
+  padding-right: 40px;
+  font-size: 120px;
+}
+.wrap-gallery h2, .wrap-gallery a {
+  float: left;
+}
+.wrap-gallery a {
+  padding-top: 87px;
+  cursor: pointer;
+}
+
+.gallery-girl {
+  background: url("../img/gallery-girl.jpg") no-repeat;
+  background-size: cover;
+  width: 879px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.5;
+}
+
+.blog {
+  margin: 70px 0 110px 0;
+}
+.blog .blog-main-text {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.blog h3 {
+  font: 20px "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.blog .blog-img {
+  position: relative;
+  margin-bottom: 150px;
+}
+.blog .blog-img img {
+  margin-left: 20%;
+}
+.blog .blog-img:last-child {
+  margin-bottom: 0;
+}
+.blog .blog-img-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+.blog .blog-right {
+  margin-top: 150px;
+}
+.blog .blog-right .exclusive-more {
+  padding: 170px 0 0 23%;
+  display: block;
+}
+.blog .blog-right .blog-img-text {
+  top: 25%;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 170px 0 155px 0;
+}
+footer .fa {
+  font-size: 30px;
+}
+footer .soc-network a {
+  padding-right: 30px;
+}
+footer .soc-network a:last-child {
+  padding-right: 0;
+}
+footer .soc-network a {
+  color: #fff;
+}
+
+.foot-menu {
+  margin-top: 95px;
+}
+.foot-menu li {
+  margin-right: 50px;
+}
+.foot-menu li:last-child {
+  margin-right: 0 !important;
+}
+.foot-menu a:hover {
+  color: #fff;
+}
+
+/* **************BLOCK  MEDIA********** */
+.block-media .main-name {
+  color: #000;
+}
+.block-media .media-category {
+  margin-top: 150px;
+  overflow: hidden;
+}
+.block-media .media-category h2 {
+  color: #a3a3a3;
+}
+.block-media .media-category > div:hover h2 {
+  color: #000;
+}
+.block-media .media-category p {
+  visibility: hidden;
+}
+.block-media .media-category > div:hover p {
+  visibility: visible;
+}
+.block-media .media-category > div:nth-child(1) p {
+  padding-left: 105px;
+}
+.block-media .media-category > div:nth-child(2), .block-media .media-category > div:nth-child(2) p {
+  text-align: center;
+}
+.block-media .media-category > div:nth-child(3) {
+  text-align: right;
+}
+.block-media .movies-catalog {
+  margin: 55px 0 140px 0;
+  overflow: hidden;
+}
+.block-media .movies-catalog h3 {
+  margin-top: 25px;
+}
+.block-media .movies-catalog h3, .block-media .movies-catalog p {
+  padding-left: 20px;
+}
+.block-media .movies-catalog .mov-img-wrap {
+  overflow: hidden;
+  margin-top: 45px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,500 @@
+header,a,a:hover
+	color: #fff
+.empty
+	height: 150px
+body
+	min-width: 320px
+a 
+	font: 20px "Montserrat"
+	color: #000
+	text-transform: uppercase
+	letter-spacing: 6px
+
+	&:hover, &:focus
+		color: #000
+		text-decoration: none
+		outline: 0
+		border: 0
+h2
+	font: 88px "PlayfairDisplay-Black"
+	margin-bottom: 20px
+
+.dark-bg
+	background-color: rgba(32, 32, 32, 0.8) !important
+	
+/* size for lg screens */
+header
+	background-size: cover
+	background-position: center center
+	// background-image: url(../img/slide1.jpg)
+	// min-height: 677px
+	position: relative
+
+.bg-color
+	background-color: rgba(32,32,32,0.4)
+
+.bg-color, #owl-demo .item > img
+	height: 1080px
+
+.btn-bar-top
+	position: absolute
+	top: 55px
+	width: 50px
+	left: 6%
+	cursor: pointer
+
+h3.main-name
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	margin: 0
+	font: 40px "Ailerons"
+	padding-top: 50px
+
+.slogan
+	//margin-left: 151px
+	margin-left: 21%
+	width: 430px
+	position: relative
+	top: 357px
+
+	h3,.btn-media
+		position: absolute
+	h3
+		font: 40px "PlayfairDisplayBold"	
+		//margin-top: 376px
+
+		span
+			font-family: "PlayfairDisplayRegular"
+
+	.btn-media
+		//margin-top: 41%
+		top: 358px
+
+		img 
+			margin-right: 7px
+			margin-top: -4px
+
+.big-btn-bar
+	position: absolute
+	left: 100px
+	top: 46.5%
+	cursor: pointer
+
+.btn-media
+	font: 17px "Montserrat"
+	text-transform: uppercase
+	letter-spacing: 6px
+	// position: absolute
+	// bottom: 10%
+
+	a
+		color: #fff
+		font-size: 17px
+	
+.top-menu 
+	display: none
+	position: absolute
+	top: 36%
+	background-color: #fff
+	width: 100%
+
+	.close-top-menu
+		top: 123px
+		position: absolute
+		left: 6%
+		cursor: pointer
+
+	ul
+		text-align: center
+		margin-bottom: 0
+
+		li 
+			//margin: 30px auto
+			padding-right: 70px
+
+			&:hover .vert-line
+				visibility: visible
+
+			&:hover a
+				color: #000
+				text-decoration: none
+
+			&:last-child
+				padding-right: 0
+	
+	a
+		font: 20px "Montserrat"
+		text-transform: uppercase
+		color: #999
+		// outline: 1px solid red
+
+	.vert-line
+		visibility: hidden
+		height: 65px
+		width: 3px
+		background-color: #000
+		display: block
+		margin: 30px auto 40px auto
+
+.mob-menu
+	position: absolute
+	background-color: #fff
+	width: 100%
+	height: 100%
+	top: 0
+	display: none
+
+	ul
+		text-align: center
+		margin-top: 50px
+		padding-left: 0
+	li 
+		margin-top: 20px
+	
+	a
+		font: 20px "Montserrat"
+		text-transform: uppercase
+		color: #999
+
+		&:hover
+			text-decoration: none
+			color: #000
+
+	a
+		overflow: hidden
+		position: relative
+		margin: 0
+		text-align: center
+		white-space: nowrap
+	
+	li:hover a:before,li:hover a:after
+		content: ''
+		display: inline-block
+		position: relative
+		top: -1px
+		width: 65px
+		height: 2px
+		vertical-align: middle
+		background: black
+		margin: 0 15px 0 5px
+
+	.close-mob-menu
+		position: absolute
+		left: 50%
+		cursor: pointer
+		bottom: 10%
+		margin-left: -21px
+
+
+
+
+
+
+
+.wrap-a
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	color: #fff
+
+#owl-demo .item > img
+	background-size: cover
+	background-position: center center
+	// min-height: 677px
+	// position: relative
+	display: block
+	width: 100%
+
+header 
+	
+	.owl-controls
+		position: absolute
+		right: 0
+		top: 34%
+
+	.owl-page
+		width: 15px
+		height: 1px
+		color: blue
+		background: #fff
+		margin: 40px 50px 40px 0
+		position: relative
+
+		.num
+			color: #fff
+			// font: 18px "Montserrat-Regular"
+			font: 18px "Montserrat-Light"
+			position: absolute
+			right: 41px
+			top: -9px
+			letter-spacing: 4px
+
+	.owl-page.active
+		height: 4px
+		margin: 45px 0 45px 36px
+		width: 28px
+
+.home-movies
+	position: relative
+	overflow: hidden
+
+	.block-movies-title
+		margin-top: 76px	
+
+	h3,p 
+		padding-left: 10px
+		
+	h3
+		margin-top: 40px
+
+%six-close
+	font: 18px "Montserrat"
+	letter-spacing: 12px
+
+.home-movies p, .blog-main-text p
+	@extend %six-close
+
+$color-gray: #a3a3a3
+
+%monserat-gray
+	font: 20px "Montserrat"
+	text-transform: uppercase
+	color: $color-gray
+	letter-spacing: 5px
+
+.home-movies h3, .monser-gray, .foot-menu a
+	@extend %monserat-gray
+
+.wrap-carousel
+	width: 1200px
+	position: relative
+	float: right
+	margin-right: -92px
+	margin-top: -190px
+
+#owl-movies
+
+	.item
+		margin-right: 40px
+
+		img
+			display: block
+			width: 100%
+			height: auto
+
+	.owl-prev, .owl-next
+		background: #000
+		padding: 40px 0
+		margin-bottom: 20px
+		width: 80px
+	
+	.owl-prev
+		background: url("../img/black-l-arrow.png") center center no-repeat		
+
+		&:hover
+			background: #000 url("../img/white-l-arrow.png") center center no-repeat
+			padding: 40px 0
+
+	.owl-next
+		background: url("../img/black-r-arrow.png") center center no-repeat		
+
+		&:hover
+			background: #000 url("../img/white-r-arrow.png") center center no-repeat
+			padding: 40px 0
+	
+	.owl-controls
+		position: absolute
+		left: -34%
+		bottom: 15%
+
+#owl-movies p, .movies-catalog p
+	font: 20px "PlayfairDisplay-Black"
+	letter-spacing: 0
+
+.gallery
+	position: relative
+	padding-top: 301px
+	margin-top: 70px
+	overflow: hidden
+
+	.gal-text
+		padding-top: 325px
+
+.wrap-gallery
+	height: 810px
+	// Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ecdbcb+0,f0e0d0+50,eddac9+100 
+	// background: #ecdbcb /* Old browsers */
+	// background: -moz-linear-gradient(top,  #ecdbcb 0%, #f0e0d0 50%, #eddac9 100%) /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top,  #ecdbcb 0%,#f0e0d0 50%,#eddac9 100%)/* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(to bottom,  #ecdbcb 0%,#f0e0d0 50%,#eddac9 100%)/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecdbcb', endColorstr='#eddac9',GradientType=0 ) /* IE6-9 */
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeddcd+0,f0e0d1+30,efdece+60,ecd9c8+100 */
+	background: #eeddcd
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZGRjZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2YwZTBkMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2VmZGVjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2Q5YzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+	background: -moz-linear-gradient(top,  #eeddcd 0%, #f0e0d1 30%, #efdece 60%, #ecd9c8 100%)
+	background: -webkit-linear-gradient(top,  #eeddcd 0%,#f0e0d1 30%,#efdece 60%,#ecd9c8 100%)
+	background: linear-gradient(to bottom,  #eeddcd 0%,#f0e0d1 30%,#efdece 60%,#ecd9c8 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeddcd', endColorstr='#ecd9c8',GradientType=0 )
+	padding-left: 49%
+
+	h2
+		display: inline
+		padding-right: 40px
+		font-size: 120px
+
+	h2,a 
+		float: left
+
+	a
+		padding-top: 87px
+		cursor: pointer
+
+.gallery-girl
+	background: url("../img/gallery-girl.jpg") no-repeat
+	background-size: cover
+	width: 879px
+	height: 100%
+	position: absolute
+	top: 0
+
+
+.grayscale
+	-webkit-filter: grayscale(100%)
+	-moz-filter: grayscale(100%)
+	-ms-filter: grayscale(100%)
+	-o-filter: grayscale(100%)
+	filter: grayscale(100%)
+	// filter: url(grayscale.svg)
+	filter: gray /* IE 6-9 */
+	opacity: 0.5
+
+.blog 
+	margin: 70px 0 110px 0
+
+	.blog-main-text
+		text-align: right
+		margin-bottom: 20px
+	
+	h3
+		font: 20px "Montserrat"
+		text-transform: uppercase
+		letter-spacing: 5px
+		line-height: 1.5
+		margin-bottom: 30px
+
+	.blog-img
+		position: relative
+		margin-bottom: 150px
+
+		img
+			margin-left: 20%
+
+	.blog-img
+		&:last-child
+			margin-bottom: 0
+
+	.blog-img-text
+		position: absolute
+		top: 30%
+		left: 0
+	
+	.blog-right
+		margin-top: 150px
+
+		.exclusive-more
+			padding: 170px 0 0 23%
+			display: block
+
+		.blog-img-text
+			top: 25%
+
+
+
+footer
+	background: #000
+	color: #fff
+	text-align: center
+	padding: 170px 0 155px 0
+	
+	.fa
+		font-size: 30px
+
+
+	.soc-network a
+		padding-right: 30px
+
+		&:last-child
+			padding-right: 0
+
+	.soc-network a
+		color: #fff
+
+.foot-menu
+	margin-top: 95px
+
+	li 
+		margin-right: 50px
+
+		&:last-child
+			margin-right: 0 !important
+	a
+		&:hover
+			color: #fff
+
+
+/* **************BLOCK  MEDIA********** */
+
+.block-media
+
+	.main-name
+		color: #000
+
+	.media-category
+		margin-top: 150px
+		overflow: hidden
+
+		h2
+			color: $color-gray
+
+		> div
+			&:hover h2
+				color: #000
+
+		p
+			visibility: hidden
+			@extend %six-close
+
+		>div
+			&:hover p
+				@extend %six-close
+				visibility: visible
+				
+		
+		> div 
+			&:nth-child(1) p
+				padding-left: 105px
+
+			&:nth-child(2), &:nth-child(2) p
+				text-align: center
+
+			&:nth-child(3)
+				text-align: right
+
+	.movies-catalog
+		margin: 55px 0 140px 0
+		overflow: hidden
+
+		h3
+			@extend %monserat-gray
+			margin-top: 25px
+
+		h3,p
+			padding-left: 20px
+
+		.mov-img-wrap
+			overflow: hidden
+			margin-top: 45px
