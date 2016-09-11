@@ -26,11 +26,12 @@ $(document).ready(function() {
 	});
 
 	$(".btn-bar-top").click(function(){
-		$(".mob-menu").show();
+		// $(".mob-menu").show();
+		$(".mob-menu").addClass("show_mob_menu");
 	});
 
 	$(".close-mob-menu").click(function(){
-		$(".mob-menu").hide()
+		$(".mob-menu").removeClass("show_mob_menu");
 	});
 
 

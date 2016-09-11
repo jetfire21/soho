@@ -126,6 +126,8 @@
 	    font-size: 16px;
 	    letter-spacing: 3px;
 	}
+	.movies-catalog > div:nth-child(3n+1) { clear: left; }
+	.movies-catalog > div:nth-child(4n+1) { clear: none; }
 }
 
 /* Medium Devices, Desktops */
@@ -153,11 +155,17 @@
 	.gallery .gal-text{ padding-top: 160px; }
 	.foot-menu li{ display: block !important; margin-right: 0 !important; margin-bottom: 20px; }
 	.blog .blog-img-text{ padding: 0 10%; }
-	blog .blog-right .exclusive-more { padding: 40px 0 0 10%};
+	blog .blog-right .exclusive-more { padding: 40px 0 0 10%; }
+
+	.media-category  h2{ font-size: 66px !important; }
+    .block-media .media-category > div:nth-child(1) p{ padding-left: 51px; }
 
 }
 
-/* Small Devices, Tablets */
+@media only screen and (max-width : 991px) {
+	.movies-catalog > div:nth-child(3n+1) { clear: none; }
+	.movies-catalog > div:nth-child(2n+1) { clear: left; }
+}
 @media only screen and (max-width : 767px) {
 
 	header	.owl-page{
@@ -184,6 +192,20 @@
 	.gallery .gal-text {	 position: relative; padding-top: 126px;}
 	.gallery .gal-text h2{ font-size: 53px; }
 	.gallery .gal-text a { font-size: 14px; }
+
+	.block-media .movies-catalog > div{ text-align: center; }
+	.block-media .movies-catalog img{ margin-right: auto; margin-left:auto;}
+/*	.media-category h2 { font-size: 47px !important;}
+	.block-media .media-category > div:nth-child p{ 
+		padding-left: 46px !important;}
+	.block-media .media-category > div:hover p{
+  	  letter-spacing: 5px;
+  	  font-size: 14px;
+  	 }*/
+  	 .media-category h2,  .media-category p { 
+  	 	text-align: center !important; 
+  	 	padding-left: 0 !important;
+  	 }
 
 }
 
@@ -303,6 +325,10 @@
 	.gallery .gal-text {	 padding-top: 250px;}
 }
 
+@media only screen and (max-width: 1400px){
+	.block-media .big-btn-bar { display: none; }
+	.block-media .btn-bar-top { display: block !important; }
+}
 @media only screen and (min-width: 1530px) and (max-width: 1808px){
 		.gallery .gal-text { padding-top: 250px;}
 }
@@ -313,6 +339,10 @@
 	.container{ /*width: 1460px;*/  width: 1500px; }
 }
 
+@media only screen and (min-width: 1600px) and (max-width: 1800px){
+
+	.block-media .container{ width: 1365px; }
+}
 @media only screen and (min-width : 1900px) {
 		/*header, .bg-color{ min-height: 1080px; }*/
 }

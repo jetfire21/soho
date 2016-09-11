@@ -19,13 +19,6 @@ h2
 	font: 88px "PlayfairDisplay-Black"
 	margin-bottom: 20px
 
-// .dark-bg
-// 	background-color: rgba(32, 32, 32, 0.8) !important
-// 	position: fixed
-// 	height: 100%
-// 	width: 100%
-// 	z-index: 9999
-
 .alex-overlay:before
 	content: ''
 	display: block
@@ -161,6 +154,10 @@ h3.main-name
 	height: 100%
 	top: 0
 	display: none
+	z-index: 9999
+
+.show_mob_menu
+	display: block !important
 
 	ul
 		text-align: center
@@ -468,6 +465,13 @@ footer
 
 .block-media
 
+	.big-btn-bar
+		left: 40px
+		top: 60.5%
+
+	.top-menu
+		top: 47%		
+
 	.main-name
 		color: #000
 
@@ -513,11 +517,14 @@ footer
 		h3,p
 			padding-left: 20px
 
-		.mov-img-wrap
-			overflow: hidden
+		img
 			margin-top: 45px
 
 	.loading-link
 		padding-bottom: 150px
 		text-align: center
 		display: block
+
+.movies-catalog > div
+	&:nth-child(4n+1)
+		clear: left
