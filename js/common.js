@@ -14,12 +14,15 @@ $(document).ready(function() {
 
 	$(".big-btn-bar").click(function(){
 		$(".top-menu").show();
-		$(".bg-color").addClass("dark-bg");
+		// $(".bg-color").addClass("dark-bg");
+		$(".alex-wrap").addClass("alex-overlay");
+		console.log("dddd");
 	});
 
 	$(".close-top-menu").click(function(){
 		$(".top-menu").hide()
-		$(".bg-color").removeClass("dark-bg");
+		// $(".bg-color").removeClass("dark-bg");
+		$(".alex-wrap").removeClass("alex-overlay");
 	});
 
 	$(".btn-bar-top").click(function(){

@@ -28,8 +28,16 @@ h2 {
   margin-bottom: 20px;
 }
 
-.dark-bg {
+.alex-overlay:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background-color: rgba(32, 32, 32, 0.8) !important;
+  z-index: 9999;
 }
 
 /* size for lg screens */
@@ -110,6 +118,7 @@ h3.main-name {
   top: 36%;
   background-color: #fff;
   width: 100%;
+  z-index: 9999;
 }
 .top-menu .close-top-menu {
   top: 123px;
