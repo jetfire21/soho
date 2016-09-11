@@ -77,6 +77,7 @@ $(document).ready(function() {
  
       // autoPlay: 3000, 
       // autoPlay: false,
+      theme: "my-empty-owl",
       items : 3,
       // itemsDesktop : [1199,3],
       // itemsDesktopSmall : [979,3],
@@ -87,5 +88,26 @@ $(document).ready(function() {
       navigationText: ['','']
  
   });
+
+    
+
+      $("#owl-movie-feedback").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      // theme: "owl-theme",
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+
+
 
 });

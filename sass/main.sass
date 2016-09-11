@@ -526,6 +526,9 @@ footer
 		text-align: center
 		display: block
 
+	#owl-movies
+		margin-bottom: 120px
+
 .movies-catalog > div
 	&:nth-child(4n+1)
 		clear: left
@@ -558,25 +561,71 @@ footer
 		padding-left: 9%
 
 .movie-content
-	
+	overflow: hidden
+	margin-bottom: 90px
+
 	.feedback
 
 		h4
 			@extend %monserat-gray
+			color: #b8b8b8
+			padding: 20px 0
 
 	p 
-		font: 30px "PlayfairDisplayRegular"
+		font: 28px "PlayfairDisplayRegular"
+		line-height: 39px
+		margin-bottom: 20px
 
 	span 
 		font: 22px "PlayfairDisplay-Black"
 
-	.movie-params p
-		@extend %monserat-gray
-	.movie-params span
-		@extend %monserat-gray
-		color: #000
+	.movie-params
+		margin-top: 40px
+
+		span
+			@extend %monserat-gray
+			color: #000
+			line-height: 45px
+
+		p
+			line-height: 45px
+
+.movie-content .movie-params p, .movie-desc h4
+	@extend %monserat-gray
+	color: #b8b8b8
+
+.movie-desc h4
+	padding: 30px 0
+
+/* ******* override default owl-theme.css************ /
+
+#owl-movie-feedback
+	
+	.owl-controls
+		text-align: left
+
+	.owl-controls .owl-page span
+		margin: 30px 40px 0 7px
+
+	.owl-controls .owl-page.active span
+		background: #000
+
+	.owl-controls.clickable .owl-page
+		&:hover span
+			background: #000
+
+/* ******* override default owl-theme.css************ /
+
+.wrap-video
+	text-align: center
+
+video
+	height: 700px
 
 
+.movie-desc
+	text-align: center
 
-
-		
+	p
+		font: 28px "PlayfairDisplayRegular"
+		line-height: 39px

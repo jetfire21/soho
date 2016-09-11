@@ -274,7 +274,7 @@ header .owl-page.active {
   letter-spacing: 12px;
 }
 
-.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3, .movie-content .feedback h4, .movie-content .movie-params p, .movie-content .movie-params span {
+.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3, .movie-content .feedback h4, .movie-content .movie-params span, .movie-content .movie-params p, .movie-desc h4 {
   font: 20px "Montserrat";
   text-transform: uppercase;
   color: #a3a3a3;
@@ -508,6 +508,9 @@ footer .soc-network a {
   text-align: center;
   display: block;
 }
+.block-media #owl-movies {
+  margin-bottom: 120px;
+}
 
 .movies-catalog > div:nth-child(4n+1) {
   clear: left;
@@ -538,14 +541,70 @@ footer .soc-network a {
   padding-left: 9%;
 }
 
+.movie-content {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+.movie-content .feedback h4 {
+  color: #b8b8b8;
+  padding: 20px 0;
+}
 .movie-content p {
-  font: 30px "PlayfairDisplayRegular";
+  font: 28px "PlayfairDisplayRegular";
+  line-height: 39px;
+  margin-bottom: 20px;
 }
 .movie-content span {
   font: 22px "PlayfairDisplay-Black";
 }
+.movie-content .movie-params {
+  margin-top: 40px;
+}
 .movie-content .movie-params span {
   color: #000;
+  line-height: 45px;
+}
+.movie-content .movie-params p {
+  line-height: 45px;
+}
+
+.movie-content .movie-params p, .movie-desc h4 {
+  color: #b8b8b8;
+}
+
+.movie-desc h4 {
+  padding: 30px 0;
+}
+
+/* ******* override default owl-theme.css************ / */
+#owl-movie-feedback .owl-controls {
+  text-align: left;
+}
+#owl-movie-feedback .owl-controls .owl-page span {
+  margin: 30px 40px 0 7px;
+}
+#owl-movie-feedback .owl-controls .owl-page.active span {
+  background: #000;
+}
+#owl-movie-feedback .owl-controls.clickable .owl-page:hover span {
+  background: #000;
+}
+
+/* ******* override default owl-theme.css************ / */
+.wrap-video {
+  text-align: center;
+}
+
+video {
+  height: 700px;
+}
+
+.movie-desc {
+  text-align: center;
+}
+.movie-desc p {
+  font: 28px "PlayfairDisplayRegular";
+  line-height: 39px;
 }
 
 /*# sourceMappingURL=main.css.map */
