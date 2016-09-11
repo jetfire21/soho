@@ -269,12 +269,12 @@ header .owl-page.active {
   margin-top: 40px;
 }
 
-.home-movies p, .blog-main-text p, .block-media .media-category p, .block-media .media-category > div:hover p {
+.home-movies p, .blog-main-text p, .block-media .media-category p, .block-media .media-category > div:hover p, .movie-title p {
   font: 18px "Montserrat";
   letter-spacing: 12px;
 }
 
-.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3 {
+.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3, .movie-content .feedback h4, .movie-content .movie-params p, .movie-content .movie-params span {
   font: 20px "Montserrat";
   text-transform: uppercase;
   color: #a3a3a3;
@@ -464,9 +464,9 @@ footer .soc-network a {
 }
 .block-media .main-name {
   color: #000;
+  margin-bottom: 125px;
 }
 .block-media .media-category {
-  margin-top: 125px;
   overflow: hidden;
 }
 .block-media .media-category h2 {
@@ -511,6 +511,41 @@ footer .soc-network a {
 
 .movies-catalog > div:nth-child(4n+1) {
   clear: left;
+}
+
+/*  ************ MOVIE SINGLE PAGE ***************** */
+.movie-title {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+.movie-title a {
+  margin-left: 54px;
+  color: #b8b8b8;
+  display: block;
+  margin-top: 55px;
+}
+.movie-title a:before {
+  content: "";
+  background: url("../img/small-left-arrow.png");
+  display: block;
+  width: 39px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 51px;
+}
+.movie-title p {
+  padding-left: 9%;
+}
+
+.movie-content p {
+  font: 30px "PlayfairDisplayRegular";
+}
+.movie-content span {
+  font: 22px "PlayfairDisplay-Black";
+}
+.movie-content .movie-params span {
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

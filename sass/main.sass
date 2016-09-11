@@ -475,9 +475,9 @@ footer
 
 	.main-name
 		color: #000
+		margin-bottom: 125px
 
 	.media-category
-		margin-top: 125px
 		overflow: hidden
 
 		h2
@@ -529,3 +529,54 @@ footer
 .movies-catalog > div
 	&:nth-child(4n+1)
 		clear: left
+
+
+/*  ************ MOVIE SINGLE PAGE ***************** */
+
+.movie-title
+	overflow: hidden
+	margin-bottom: 90px
+
+	a
+		margin-left: 54px
+		color: #b8b8b8
+		display: block
+		margin-top: 55px
+	
+		&:before
+			content: ""
+			background: url("../img/small-left-arrow.png")
+			display: block
+			width: 39px
+			height: 30px
+			position: absolute
+			left: 10px
+			top: 51px
+
+	p
+		@extend %six-close
+		padding-left: 9%
+
+.movie-content
+	
+	.feedback
+
+		h4
+			@extend %monserat-gray
+
+	p 
+		font: 30px "PlayfairDisplayRegular"
+
+	span 
+		font: 22px "PlayfairDisplay-Black"
+
+	.movie-params p
+		@extend %monserat-gray
+	.movie-params span
+		@extend %monserat-gray
+		color: #000
+
+
+
+
+		
