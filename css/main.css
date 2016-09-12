@@ -274,7 +274,7 @@ header .owl-page.active {
   letter-spacing: 12px;
 }
 
-.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3, .movie-content .feedback h4, .movie-content .movie-params span, .movie-content .movie-params p, .movie-desc h4 {
+.home-movies h3, .monser-gray, .foot-menu a, .block-media .movies-catalog h3, .block-media .movies-catalog h3 a, .movie-content .feedback h4, .movie-content .movie-params span, .movie-content .movie-params p, .movie-desc h4 {
   font: 20px "Montserrat";
   text-transform: uppercase;
   color: #a3a3a3;
@@ -494,8 +494,11 @@ footer .soc-network a {
   margin: 55px 0 140px 0;
   overflow: hidden;
 }
-.block-media .movies-catalog h3 {
+.block-media .movies-catalog h3, .block-media .movies-catalog h3 a {
   margin-top: 25px;
+}
+.block-media .movies-catalog h3:hover, .block-media .movies-catalog h3 a:hover {
+  color: #000;
 }
 .block-media .movies-catalog h3, .block-media .movies-catalog p {
   padding-left: 20px;
@@ -596,7 +599,7 @@ footer .soc-network a {
 }
 
 video {
-  height: 700px;
+  margin: 0 auto;
 }
 
 .movie-desc {
