@@ -11,6 +11,14 @@ $(document).ready(function() {
 	var height = $(window).height();
 	// $("body").append("width - " + width + " height -" + height);
 
+	var img_overlay = $(".img-overlay");
+	var par_block_img_width = img_overlay.width();
+	var par_block_img_height = img_overlay.height();
+	 // $("body").append("width - " + par_block_img_width + " height -" + par_block_img_height);
+	 //  $("body").append("width - " + width + " height -" + height);
+	// img_overlay.css({"height":height});
+
+
 
 	$(".big-btn-bar").click(function(){
 		$(".top-menu").show();

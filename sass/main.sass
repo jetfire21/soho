@@ -51,6 +51,7 @@ header
 	width: 50px
 	left: 6%
 	cursor: pointer
+	z-index: 3
 
 h3.main-name
 	color: #fff
@@ -89,6 +90,7 @@ h3.main-name
 	left: 100px
 	top: 46.5%
 	cursor: pointer
+	z-index: 3
 
 .btn-media
 	font: 17px "Montserrat"
@@ -477,6 +479,9 @@ footer
 		color: #000
 		margin-bottom: 125px
 
+	.movie-cont-right
+		padding-left: 25px
+
 	.media-category
 		overflow: hidden
 
@@ -514,7 +519,7 @@ footer
 		h3, h3 a
 			@extend %monserat-gray
 			margin-top: 25px
-			
+
 			&:hover
 				color: #000
 
@@ -600,7 +605,7 @@ footer
 .movie-desc h4
 	padding: 30px 0
 
-/* ******* override default owl-theme.css************ /
+/* ******* override default owl-theme.css*********** */
 
 #owl-movie-feedback
 	
@@ -617,7 +622,7 @@ footer
 		&:hover span
 			background: #000
 
-/* ******* override default owl-theme.css************ /
+/* ******* override default owl-theme.css*********** */
 
 .wrap-video
 	text-align: center
@@ -632,3 +637,69 @@ video
 	p
 		font: 28px "PlayfairDisplayRegular"
 		line-height: 39px
+
+
+
+/* *********** BIO PAGE ************ */
+html,body 
+	height: 100%
+
+.bio_page
+	
+	.btn-media
+		position: absolute
+		// bottom: 140px
+		// right: 135px		
+		bottom: 140px
+		right: 65px
+		z-index: 4
+
+	.img-overlay
+		position: relative
+		z-index: 1
+		width: 100%
+		height: 100%
+		margin: 0 0 0 -30px
+		// padding-right: 120px
+		overflow: hidden
+		// max-width: 684px
+
+
+		&:before 
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(0,0,0,0.4)
+			z-index: 2
+			// margin-left: -65px
+			// margin-left: -9%
+	
+	.bio_content
+		// padding: 0 10% 0 0%
+		padding: 0 7% 0 5%
+
+		.soc-network
+			position: absolute
+			right: 6%
+			top: 42px
+
+			.fa
+				font-size: 30px
+				padding-left: 25px
+
+	p
+		font: bold 20px "Montserrat-Light"
+		color: #a3a3a3
+		margin-bottom: 32px
+		line-height: 32px
+	h2
+		font: 200px "PlayfairDisplay-Black"
+		margin-top: 0
+	
+	footer
+		display: none
+	
