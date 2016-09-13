@@ -99,7 +99,7 @@ $(document).ready(function() {
 
     
 
-      $("#owl-movie-feedback").owlCarousel({
+  $("#owl-movie-feedback").owlCarousel({
  
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
@@ -115,6 +115,35 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+  $("#owl-gallery").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      autoPlay: false,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      // theme: "owl-theme",
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
 
 
 

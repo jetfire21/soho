@@ -117,8 +117,9 @@
 
 	.bio_page .img-overlay{ padding-right: 0; }
 	/*.bio_page .img-overlay:before { margin-left: 0; }*/
-	.bio_page .bio_content { padding: 0 25px 0 10px; }
-	.bio_page p { line-height: 30px; font-size: 18px; }
+	/*.bio_page .img-overlay{ max-height: 768px; }*/
+	.bio_page .bio_content { padding: 0 50px 0 18px; }
+	.bio_page p { line-height: 28px; font-size: 17px; }
 	.bio_page .btn-media{ bottom:60px; right: 47px;}
 
 }
