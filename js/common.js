@@ -44,6 +44,7 @@ $(document).ready(function() {
 
 
 
+ 	$(" .owl-pagination .owl-page.active").append("<p class='num'>01</p>");
 
     $("#owl-demo").owlCarousel({
  
@@ -53,7 +54,7 @@ $(document).ready(function() {
 	      singleItem:true,
 	      navigationText:["",""],
 	      autoPlay: true,
-		 afterMove: moved,
+		  afterMove: moved,
 
 	      // "singleItem:true" is a shortcut for:
 	      // items : 1, 
@@ -62,22 +63,20 @@ $(document).ready(function() {
 	      // itemsTablet: false,
 	      // itemsMobile : false
  
-  	});
-
- 	  $("header .owl-pagination .owl-page.active").append("<p class='num'>01</p>");
+  	}); 	
 
 	  function moved(){
-			var ind = $("header .owl-pagination .owl-page").index( $(".active")) + 1; 	
+			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page").index( $(".active")) + 1; 	
 			console.log(ind);
-			$("header .owl-pagination .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num").remove();
+			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active").append("<p class='num'>0" + ind + "</p>");
 	  }
 
- 	  $("header .owl-pagination .owl-page").click(function(){
-			var ind = $("header .owl-pagination .owl-page").index( $(".active")) + 1; 	
-			console.log(ind);
-			$("header .owl-pagination .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+ 	  $("header .owl-pagination .owl-page, #owl-gallery .owl-page").click(function(){
+			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page").index( $(".active")) + 1; 	
+			// console.log(ind);
+			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num").remove();
+			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active").append("<p class='num'>0" + ind + "</p>");
  	 });
 
 
@@ -123,7 +122,10 @@ $(document).ready(function() {
       slideSpeed : 300,
       paginationSpeed : 400,
       // theme: "owl-theme",
-      singleItem:true
+      singleItem:true,
+      afterMove: moved,
+     navigationText: ['','']
+
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
@@ -133,6 +135,9 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+  $("#owl-gallery .owl-page.active").append("<p class='num'>01</p>");
+  
 
 	$('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
