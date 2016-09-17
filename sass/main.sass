@@ -18,9 +18,11 @@ a
 
 $color-dark-gray: #a3a3a3
 
-h2
-	font: 88px "PlayfairDisplay-Black"
+h2, h2 a
+	font: 88px "PlayfairDisplay-Black" !important
 	margin-bottom: 20px
+	letter-spacing: normal
+	text-transform: capitalize
 
 .alex-overlay:before
 	content: ''
@@ -282,8 +284,13 @@ header, #owl-gallery
 	color: $color-dark-gray
 	letter-spacing: 5px
 
-.home-movies h3, .monser-gray, .foot-menu a
+.home-movies h3, .monser-gray, .foot-menu a, .mfp-content .mfp-title
 	@extend %monserat-gray
+
+.mfp-content .mfp-title
+	color: #fff
+	text-align: center
+	padding: 30px 0 30px 0
 
 .wrap-carousel
 	width: 1200px
@@ -486,12 +493,20 @@ footer
 	.media-category
 		overflow: hidden
 
-		h2
+		h2, h2 a
 			color: #dddddd
 
 		> div
-			&:hover h2
+			&:hover h2, &:hover h2 a
 				color: #000
+
+		.cat-active 
+
+			a 
+				color: #000 !important
+
+			p
+				visibility: visible
 
 		p
 			visibility: hidden
@@ -709,6 +724,9 @@ html,body
 .page-gallery
 	background: #000
 	padding: 0 0 70px 0
+	position: relative
+	// height: 100%
+	min-height: 100%
 
 	h3
 		margin-bottom: 30px
@@ -716,11 +734,23 @@ html,body
 	.big-btn-bar
 		left: 34px
 
+	.btn-small-media
+		width: 41px
+		height: 41px
+		display: block
+		background: url("../img/small-media.jpg")
+		position: absolute
+		right: 38px
+		top: 60px
+
 .page-gallery #owl-gallery a
 	@extend %monserat-gray
 	color: #585858
 
 #owl-gallery
+
+	.owl-controls
+		top: 4%
 	
 	img 
 		max-width: 100%
@@ -733,3 +763,202 @@ html,body
 
 	.gal-img
 		line-height: 662px
+
+.aaa
+	height: 100%
+	background: red
+
+
+
+
+/* ********* page music ******** */
+
+.wrap-audio-img
+	position: relative
+	cursor: pointer
+	z-index: 1
+	overflow: hidden
+	margin-top: 45px
+
+	&:hover
+		&:after
+			content: ""
+			z-index: 2
+			background: rgba(0,0,0,0.7)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+
+	img
+		z-index: 1
+		display: block
+		width: 100%
+		max-width: 100%
+		margin-top: 0 !important
+
+	
+	&:hover .play-music-img
+		// background: url("../img/play.png") no-repeat
+		background: url("../img/play.png") no-repeat
+		width: 127px
+		height: 140px
+		position: absolute
+		top: 29%
+		left: 34%
+		z-index: 3
+		background-size: cover
+
+
+
+
+
+
+
+
+
+/* ********* style audio player ******** */
+
+.jp-audio
+	background: #000
+	// background: #b7abab
+	color: #fff
+	position: fixed
+	bottom: 0
+	color: #fff
+	width: 100%
+	z-index: 999999
+
+	a
+		color: #fff
+
+	button
+		border: 0
+		outline: 0
+		text-indent: -9999px
+	
+	.jp-controls
+		float: left
+		margin-top: -19px
+
+		button
+			margin-left: 30px
+
+	.jp-controls, .jp-volume-controls, .jp-playlist, .jpa-time-toogles
+		padding: 40px 0 30px 0
+
+	.jp-volume-controls, .jp-playlist
+		float: left
+
+	.jpa-time-toogles
+		float: right
+
+	.jp-progress
+		background: #f0f2f7
+		height: 5px
+		overflow: hidden
+
+	.jp-play-bar
+		background: #b2b2b2
+		height: 5px
+
+	.jp-volume-controls
+		position: relative
+
+	.jp-volume-bar
+		width: 105px
+		background: #fff
+		// border: 1px solid #fff
+		height: 8px
+		position: absolute
+		top: 48px
+		left: 81px
+		cursor: pointer
+		border-radius: 3px
+		// display: none !important
+
+	.jp-volume-bar-value
+		background: #333
+		height: 8px
+		border-radius: 3px 0 0 3px
+		border: 1px solid #ccc
+
+	.jp-volume-max
+		background: url("../img/jplayer/volume.png") 0 0 no-repeat
+		width: 33px
+		height: 29px
+		margin: 0 0 0 40px	
+
+	.jp-playlist
+		width: 57%
+		// width: 64%
+
+	.jp-playlist li
+		display: none
+
+	.jp-playlist-current
+		display: block !important
+
+	.jp-play
+		background: url("../img/jplayer/audio_s_p.png") 0 0 no-repeat
+		width: 60px
+		height: 61px
+
+		&:hover
+			background-position: 0 -61px
+
+	.jp-previous
+		background: url("../img/jplayer/audio_prev.png") 0 0 no-repeat
+		width: 34px
+		height: 27px
+
+		&:hover
+			background-position: 0 -27px 
+
+	.jp-next
+		background: url("../img/jplayer/audio_next.png") 0 0 no-repeat
+		width: 34px
+		height: 27px
+
+		&:hover
+			background-position: 0 -27px
+
+	.jp-repeat
+		background: url("../img/jplayer/repeat.png") 0 0 no-repeat
+		width: 35px
+		height: 30px
+
+		&:hover
+			background-position: 0 -30px
+
+
+	.jp-shuffle
+		background: url("../img/jplayer/shuffle.png") 0 -30px no-repeat
+		width: 38px
+		height: 30px
+
+		&:hover
+			background-position: 0 0
+		
+	.jp-stop, .jp-mute
+		display: none
+
+	.jpa-time-toogles > div
+		// display: inline-block
+		float: left
+
+	.jp-current-time, .jp-duration, .jpa-slash, a
+		@extend %monserat-gray
+		font-size: 16px
+		line-height: 28px
+
+	.jp-current-time
+		color: #fff
+
+	.jp-duration, .jpa-slash
+		color: #333
+
+	.jp-toggles button, .jp-duration
+		margin-right: 30px
