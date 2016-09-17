@@ -284,7 +284,7 @@ header, #owl-gallery
 	color: $color-dark-gray
 	letter-spacing: 5px
 
-.home-movies h3, .monser-gray, .foot-menu a, .mfp-content .mfp-title
+.home-movies h3, .monser-gray, .foot-menu a, .mfp-content .mfp-title, .video-catalog h3, .video-catalog h3 a
 	@extend %monserat-gray
 
 .mfp-content .mfp-title
@@ -375,7 +375,8 @@ header, #owl-gallery
 		float: left
 
 	a
-		padding-top: 87px
+		// padding-top: 87px
+		padding-top: 68px
 		cursor: pointer
 
 .gallery-girl
@@ -614,6 +615,8 @@ footer
 		p
 			line-height: 45px
 
+
+
 .movie-content .movie-params p, .movie-desc h4
 	@extend %monserat-gray
 	color: #b8b8b8
@@ -640,12 +643,10 @@ footer
 
 /* ******* override default owl-theme.css*********** */
 
-.wrap-video
-	text-align: center
-
-video
-	margin: 0 auto
-
+.wrap-movie-video
+	iframe
+		width: 100%
+		height: 670px
 
 .movie-desc
 	text-align: center
@@ -713,7 +714,7 @@ html,body
 		margin-bottom: 32px
 		line-height: 32px
 	h2
-		font: 200px "PlayfairDisplay-Black"
+		font: 200px "PlayfairDisplay-Black" !important
 		margin-top: 0
 	
 	footer
@@ -829,7 +830,7 @@ html,body
 	bottom: 0
 	color: #fff
 	width: 100%
-	z-index: 999999
+	z-index: 10
 
 	a
 		color: #fff
@@ -962,3 +963,22 @@ html,body
 
 	.jp-toggles button, .jp-duration
 		margin-right: 30px
+
+
+/* **************** video page ************** */
+
+
+.video-catalog
+	margin-top: 70px !important
+	margin-bottom: 140px
+	overflow: hidden
+	
+	> div
+		margin-bottom: 50px
+	
+	iframe
+		width: 100%
+		height: 465px
+
+	// .item-video-2
+	// 	text-align: right

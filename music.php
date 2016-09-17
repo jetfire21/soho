@@ -238,7 +238,7 @@ if(!empty($code)){
 		<div class="media-category">
 			<div class="col-md-4 col-sm-4 col-xs-12 "><h2><a  href="media.html">Movies</a></h2><p>xxxxxx</p></div>
 			<div class="col-md-4 col-sm-4 col-xs-12 cat-active"><h2><a href="music.php">Music</a></h2><p>xxxxxx</p></div>
-			<div class="col-md-4 col-sm-4 col-xs-12"><h2><a href="media.html">Video</a></h2><p>xxxxxx</p></div>
+			<div class="col-md-4 col-sm-4 col-xs-12"><h2><a href="video.html">Video</a></h2><p>xxxxxx</p></div>
 		</div>
 		
 		<div class="movies-catalog">

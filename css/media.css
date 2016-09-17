@@ -99,7 +99,7 @@
 
 	.block-media .loading-link { padding-bottom: 100px; }
 
-	.block-media .movies-catalog { margin-bottom: 70px; }
+	.block-media .movies-catalog, .video-catalog { margin-bottom: 70px; }
 
 	.home-movies h3, .monser-gray, .foot-menu a,
 	.block-media .movies-catalog h3,
@@ -126,6 +126,14 @@
 	}
 	#owl-gallery .gal-img img{   max-height: 500px; }
 	.page-gallery .big-btn-bar { width: 75px; left:15px; }
+
+	.video-catalog iframe {
+	    height: 365px;
+	}
+
+	.wrap-movie-video iframe {
+	    height: 560px;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -194,7 +202,7 @@
 	.blog .blog-img-text{ padding: 0 10%; }
 	blog .blog-right .exclusive-more { padding: 40px 0 0 10%; }
 
-	.media-category  h2{ font-size: 66px !important; }
+	.media-category h2,  .media-category h2 a { font-size: 66px !important; }
     .block-media .media-category > div:nth-child(1) p{ padding-left: 51px; }
 	.block-media .movie-cont-right { padding-left: 15px; }
 	#owl-gallery .gal-img { line-height: 407px; }
@@ -204,7 +212,13 @@
 	    /*top: 35px;*/
 	}
 
+	.video-catalog iframe {
+	    height: 282px;
+	}
 
+	.wrap-movie-video iframe {
+	    height: 480px;
+	}
 
 }
 
@@ -272,7 +286,7 @@
   	  letter-spacing: 5px;
   	  font-size: 14px;
   	 }*/
-  	 .media-category h2,  .media-category p { 
+  	 .media-category h2, .media-category h2 a, .media-category p { 
   	 	text-align: center !important; 
   	 	padding-left: 0 !important;
   	 }
@@ -296,6 +310,14 @@
    .gal-hide-slider img{ max-width: 100%; height: auto; }
 	#owl-gallery .gal-link-bot, #owl-gallery .gal-link-top { margin-top: 0; display:none; }
 	#owl-gallery .owl-item { margin-top: 40px; }
+
+	.video-catalog iframe {
+	    height: 396px;
+	}
+
+	.wrap-movie-video iframe {
+	    height: 330px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -361,6 +383,14 @@
 
 	.bio_page .btn-media img{ width: 70px; }
 
+	.video-catalog iframe {
+	    height: 200px;
+	}
+
+	.wrap-movie-video iframe {
+	    height: 200px;
+	}
+
 	/*	
 	.mob-menu .close-mob-menu {
 		top: 86%;
@@ -414,6 +444,7 @@
 @media only screen and (min-width: 1201px) and (max-width: 1600px){
 	
 	.col-lg-6{ width: 44.5% }
+	.video-catalog .col-lg-6{ width: 50%; }
 }	
 
 
