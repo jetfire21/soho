@@ -53,26 +53,26 @@ $(document).ready(function() {
 	};
 	
 	// This block simply ads a corresponding class to the body tag so that we can target browsers with CSS classes
-	if(getBrowser()=='mozilla'){
-		// Mozilla
-		$('body').addClass('mozilla');
-	}
+	// if(getBrowser()=='mozilla'){
+	// 	// Mozilla
+	// 	$('body').addClass('mozilla');
+	// }
 	else if(getBrowser()=='ie'){
 		// IE Favourite
 		$('body').addClass('ie');
 	}
-	else if(getBrowser()=='opera'){
-		// Opera
-		$('body').addClass('opera');
-	}           
+	// else if(getBrowser()=='opera'){
+	// 	// Opera
+	// 	$('body').addClass('opera');
+	// }           
 	else if (getBrowser()=='safari'){ // safari
 		// Safari
 		$('body').addClass('safari');
 	}
-	else if(getBrowser()=='chrome'){
-		// Chrome
-		$('body').addClass('chrome');
-	};
+	// else if(getBrowser()=='chrome'){
+	// 	// Chrome
+	// 	$('body').addClass('chrome');
+	// };
 	if (getInternetExplorerVersion() >= 10){
 		$('body').addClass('ie11');
 	};
@@ -86,9 +86,9 @@ $(document).ready(function() {
 		$.browser.msie=/msie/.test( userAgent ) && !/opera/.test( userAgent );
 		$.browser.mozilla= /mozilla/.test( userAgent ) && !/(compatible|webkit)/.test( userAgent ) || /firefox/.test(userAgent);
 
-		if($.browser.chrome) return "chrome";
-		if($.browser.mozilla) return "mozilla";
-		if($.browser.opera) return "opera";
+		// if($.browser.chrome) return "chrome";
+		// if($.browser.mozilla) return "mozilla";
+		// if($.browser.opera) return "opera";
 		if($.browser.safari) return "safari";
 		if($.browser.msie) return "ie";
 	};
