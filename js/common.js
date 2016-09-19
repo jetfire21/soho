@@ -121,7 +121,7 @@ $(document).ready(function() {
 	// if( width < 768){
 	//   	 $(".gal-hide-slider").removeAttr("id").removeClass("owl-carousel").removeClass("owl-theme");
 	//   }
-
+if (width > 767){
   $("#owl-gallery").owlCarousel({
  
       navigation : true, // Show next and prev buttons
@@ -142,7 +142,7 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
-
+}
 
   $("#owl-gallery .owl-page.active").append("<p class='num'>01</p>");
   

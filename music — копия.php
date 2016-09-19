@@ -233,7 +233,7 @@ if(!empty($code)){
 	<div class="container">
 		
 		<img class="btn-bar-top hidden-lg" src="img/black-top-btn.png" alt="">
-		<h1 class="main-name">Fernanda romero</h1>
+		<h3 class="main-name">Fernanda romero</h3>
 
 		<div class="media-category">
 			<div class="col-md-4 col-sm-4 col-xs-12 "><h2><a  href="media.html">Movies</a></h2><p>xxxxxx</p></div>
@@ -244,7 +244,7 @@ if(!empty($code)){
 		<div class="movies-catalog">
 
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="1">			 	  	
+	 				 <div class="wrap-audio-img" >			 	  	
 	 				 	  <img class="img-responsive" src="https://i.scdn.co/image/78abdfb2caf600a98277c583671935e30295ec07" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
@@ -252,7 +252,7 @@ if(!empty($code)){
  				 	  <p>buy</p>
  				 </div>
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="2">			 	  	
+	 				 <div id="jpa-img-click" class="wrap-audio-img">			 	  	
  				 	  <img class="img-responsive" src="https://i.scdn.co/image/78abdfb2caf600a98277c583671935e30295ec07" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
@@ -260,7 +260,7 @@ if(!empty($code)){
  				 	  <p>buy</p>
  				 </div>
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="3">			 	  	
+	 				 <div class="wrap-audio-img">			 	  	
  				 	  <img class="img-responsive" src="https://i.scdn.co/image/78abdfb2caf600a98277c583671935e30295ec07" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
@@ -268,7 +268,7 @@ if(!empty($code)){
  				 	  <p>buy</p>
  				 </div>
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="4">			 	  	
+	 				 <div class="wrap-audio-img">			 	  	
  				 	  <img class="img-responsive" src="https://i.scdn.co/image/78abdfb2caf600a98277c583671935e30295ec07" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
@@ -276,7 +276,7 @@ if(!empty($code)){
  				 	  <p>buy</p>
  				 </div>
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-title="Out of Control - Alt Mix" data-href="https://p.scdn.co/mp3-preview/9da8f305b65f3b2ce8f11aa244820be310ac63a6" data-index="5">			 	  	
+	 				 <div class="wrap-audio-img">			 	  	
  				 	  <img class="img-responsive" src="https://i.scdn.co/image/78abdfb2caf600a98277c583671935e30295ec07" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
@@ -284,27 +284,11 @@ if(!empty($code)){
  				 	  <p>buy</p>
  				 </div>
  				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="6">			 	  	
+	 				 <div class="wrap-audio-img">			 	  	
  				 	  <img class="img-responsive" src="https://i.scdn.co/image/96123689da23e3e9b3bc764dd428507cfb22b2c0" alt="">
 	 				 	  <div class="play-music-img"></div>
 	 				 </div>
  				 	  <h3>air</h3>
- 				 	  <p>buy</p>
- 				 </div>
- 				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="7">			 	  	
- 				 	  <img class="img-responsive" src="https://i.scdn.co/image/96123689da23e3e9b3bc764dd428507cfb22b2c0" alt="">
-	 				 	  <div class="play-music-img"></div>
-	 				 </div>
- 				 	  <h3>Cape Town</h3>
- 				 	  <p>buy</p>
- 				 </div>
- 				 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-	 				 <div class="wrap-audio-img" data-index="8">			 	  	
- 				 	  <img class="img-responsive" src="https://i.scdn.co/image/96123689da23e3e9b3bc764dd428507cfb22b2c0" alt="">
-	 				 	  <div class="play-music-img"></div>
-	 				 </div>
- 				 	  <h3>Runaway</h3>
  				 	  <p>buy</p>
  				 </div>
 
@@ -455,7 +439,6 @@ Your browser does not support the audio element.
 $(document).ready(function(){
 
 
-
 	var my_playlist = new jPlayerPlaylist({
 		jPlayer: "#jquery_jplayer_1",
 		cssSelectorAncestor: "#jp_container_1"
@@ -494,16 +477,6 @@ $(document).ready(function(){
 			mp3:"https://p.scdn.co/mp3-preview/9508abbec63729d236d77d54ccb393ff56e5f820",
 			oga:"https://p.scdn.co/mp3-preview/9508abbec63729d236d77d54ccb393ff56e5f820"
 		},
-		{
-			title:"Cape Town / Stranger Lovers",
-			mp3:"https://p.scdn.co/mp3-preview/13e7201d03cf7455f86044b6b2bb612f1673c097",
-			oga:"https://p.scdn.co/mp3-preview/13e7201d03cf7455f86044b6b2bb612f1673c097"
-		},
-		{
-			title:"Runaway / Stranger Lovers",
-			mp3:"https://p.scdn.co/mp3-preview/bb19b42c2020c59a337efd368cc86396a7d017b7",
-			oga:"https://p.scdn.co/mp3-preview/bb19b42c2020c59a337efd368cc86396a7d017b7"
-		},
 
 	], {
 		swfPath: "libs/jplayer/jplayer",
@@ -512,39 +485,21 @@ $(document).ready(function(){
 		useStateClassSkin: true,
 		autoBlur: false,
 		smoothPlayBar: true,
-		keyEnabled: true,
-		loop: true,
-	   playlistOptions: {
-		    // autoPlay: true,
-		     loopOnPrevious: true,
-  			 shuffleOnLoop: true,
-		  },
+		keyEnabled: true
 	});
-
-	// playlistOptions: {
-	//   autoPlay: true,
-	//   loopOnPrevious: true,
-	//   shuffleOnLoop: true
-	// };
 
 	$('.jp-volume-bar').css('display','none');
 
 	$(".wrap-audio-img").click(function(){
-		// $("#jquery_jplayer_1").jPlayer("stop");
+		$("#jquery_jplayer_1").jPlayer("stop");
 
-		var title = $(this).attr("data-title");
-		var href = $(this).attr("data-href");
-		var ind_track = $(this).attr("data-index") - 1;
-		console.log("ind-track "+ind_track);
-
-		// my_playlist.add({
-		//   title: title,
-		//   mp3: href,
-		//   oga: href,
-		// },[ {playNow: true} ]);	
-		// $(".jp-playlist ul li:nth-child(" + ind_track + ")").css({"display":"block"});
-
-		my_playlist.play(ind_track);
+		my_playlist.add({
+		  title:"Your Face",
+		  artist:"The Stark Palace",
+		  mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+		  oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg",
+		  poster: "http://www.jplayer.org/audio/poster/The_Stark_Palace_640x360.png"
+		},[ {playNow: true} ]);
 
 		$("#jquery_jplayer_1").jPlayer("play");
 		$(".jp-play").css('background-position',' 0 -61px');
@@ -554,7 +509,6 @@ $(document).ready(function(){
 	$(".jp-play").click(function(){
 		$(this).css('background-position',' 0 0');
 	});
-
 
 	$(".jp-next, .jp-previous").click(function(){
 		$(".jp-play").css('background-position',' 0 -61px');
@@ -566,15 +520,6 @@ $(document).ready(function(){
    },function(){
        $('.jp-volume-bar').css('display','none');
    });
-
- 	$(".jp-playlist li").removeClass("show-playlist-title");
-
- 	 $(".jp-repeat").toggle(function(){
-      $(this).css('background-position','0 -30px');
-   },function(){
-       $(this).css('background-position','0 0');
-   });
-
 
 });
 //]]>

@@ -66,7 +66,7 @@ header {
   z-index: 3;
 }
 
-h3.main-name {
+h3.main-name, h1.main-name {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -278,11 +278,15 @@ header .owl-page.active, #owl-gallery .owl-page.active {
   letter-spacing: 12px;
 }
 
-.home-movies h3, .monser-gray, .foot-menu a, .mfp-content .mfp-title, .video-catalog h3, .video-catalog h3 a, .block-media .movies-catalog h3, .block-media .movies-catalog h3 a, .movie-content .feedback h4, .movie-content .movie-params span, .movie-content .movie-params p, .movie-desc h4, .page-gallery #owl-gallery a, .jp-audio .jp-current-time, .jp-audio .jp-duration, .jp-audio .jpa-slash, .jp-audio a {
+.home-movies h3, .home-movies h3 a, .monser-gray, .foot-menu a, .mfp-content .mfp-title, .video-catalog h3, .video-catalog h3 a, .block-media .movies-catalog h3, .block-media .movies-catalog h3 a, .movie-content .feedback h4, .movie-content .movie-params span, .movie-content .movie-params p, .movie-desc h4, .page-gallery #owl-gallery a, .jp-audio .jp-current-time, .jp-audio .jp-duration, .jp-audio .jpa-slash, .jp-audio a {
   font: 20px "Montserrat";
   text-transform: uppercase;
   color: #a3a3a3;
   letter-spacing: 5px;
+}
+
+.home-movies h3 a:hover {
+  color: #000;
 }
 
 .mfp-content .mfp-title {
@@ -838,8 +842,12 @@ html, body {
 .jp-audio .jp-playlist {
   width: 57%;
 }
+.jp-audio .jp-playlist-item,
 .jp-audio .jp-playlist li {
   display: none;
+}
+.jp-audio .jp-playlist li.show-playlist-title, .jp-audio .jp-playlist li.show-playlist-title a {
+  display: block;
 }
 .jp-audio .jp-playlist-current {
   display: block !important;
@@ -877,12 +885,12 @@ html, body {
   background-position: 0 -30px;
 }
 .jp-audio .jp-shuffle {
-  background: url("../img/jplayer/shuffle.png") 0 -30px no-repeat;
+  background: url("../img/jplayer/shuffle.png") 0 0 no-repeat;
   width: 38px;
   height: 30px;
 }
 .jp-audio .jp-shuffle:hover {
-  background-position: 0 0;
+  background-position: 0 -30px;
 }
 .jp-audio .jp-stop, .jp-audio .jp-mute {
   display: none;

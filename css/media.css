@@ -23,7 +23,7 @@
 	}
 	.slogan .btn-media{ top:285px; }
 
-	h3.main-name {
+	h3.main-name, h1.main-name {
 		font-size: 34px;
 	}
 	.slogan{ margin-left: 30%; }
@@ -134,12 +134,17 @@
 	.wrap-movie-video iframe {
 	    height: 560px;
 	}
+
+	.wrap-audio-img:hover .play-music-img{
+		top:25%;
+		left: 28%;
+	}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
-	h3.main-name {
+	h3.main-name, h1.main-name {
 		font-size: 28px;
 	}
 
@@ -302,10 +307,13 @@
 
 	.bio_page h2{ font-size: 170px; }
 
-
+	.page-gallery{ position: static; }
 	#owl-gallery .gal-img,
-	.gal-hide-slider .gal-img{
+	.gal-hide-slider .gal-img,
+	#gallery-static-img .gal-img{
 	line-height: normal; margin-bottom:60px; text-align: center;}
+	#gallery-static-img { margin-top:60px; overflow: hidden;}
+	#gallery-static-img img{ max-width: 100%; }
 	#owl-gallery .gal-img img,
    .gal-hide-slider img{ max-width: 100%; height: auto; }
 	#owl-gallery .gal-link-bot, #owl-gallery .gal-link-top { margin-top: 0; display:none; }
@@ -327,7 +335,7 @@
 	
 	header, .bg-color, #owl-demo .item > img{ /*min-height: 480px;*/ height:480px;}
 
-	h3.main-name {
+	h3.main-name, h1.main-name {
 		font-size: 20px;
 		padding-top: 20px;
 	}
