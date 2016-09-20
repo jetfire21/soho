@@ -277,8 +277,8 @@
 
 	.gallery{ padding-top: 139px; }
 	.gallery-girl{ width: 366px; background-position: -70px center;}
-	.wrap-gallery { height: 374px; padding-left: 66%;}
-	.gallery .gal-text {	 position: relative; padding-top: 126px;}
+	.wrap-gallery { height: 374px; padding-left: 55%;}
+	.gallery .gal-text {	 position: relative;  padding-top: 105px !important;}
 	.gallery .gal-text h2{ font-size: 53px; }
 	.gallery .gal-text a { font-size: 14px; }
 
@@ -329,6 +329,14 @@
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 630px) {
+	.gallery-girl{ display: none; }
+	.wrap-gallery{ text-align: center; padding-left:0;}
+	.wrap-gallery h2{ padding-right: 0; }
+
+
+}
+
 @media only screen and (max-width : 480px) {
 
 	h2{ font-size: 70px; }
