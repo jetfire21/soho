@@ -926,4 +926,15 @@ html, body {
   height: 465px;
 }
 
+.page-gallery .media-category {
+  text-align: center;
+}
+.page-gallery .media-category p, .page-gallery .media-category a {
+  color: #fff !important;
+}
+.page-gallery .media-category p {
+  font: 18px "Montserrat";
+  letter-spacing: 12px;
+}
+
 /*# sourceMappingURL=main.css.map */

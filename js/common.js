@@ -157,6 +157,54 @@ if (width > 767){
 		
 	// });
 
+  $("#owl-shop-slider").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      autoPlay: false,
+      slideSpeed : 500,
+      paginationSpeed : 700,
+      // theme: "owl-theme",
+      singleItem:true,
+      // afterMove: moved1,
+      // beforeMove: moved2,
+      // beforeInit: moved3,
+     navigationText: ['','']
+ 
+  });
+
+  $("#owl-shop-slider2").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      autoPlay: false,
+      slideSpeed : 500,
+      paginationSpeed : 700,
+      // theme: "owl-theme",
+      singleItem:true,
+      // afterMove: moved1,
+      // beforeMove: moved2,
+      // beforeInit: moved3,
+     navigationText: ['','']
+ 
+  });
+
+  function moved1(){
+  	$(".grayscale .aa").text("111111111111111");
+  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
+
+
+  }
+  function moved2(){
+  	$(".grayscale .aa").text("111111111111111");
+  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
+
+
+  }
+  function moved3(){
+  	$(".grayscale .aa").text("111111111111111");
+  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
+
+
+  }
 
 
 

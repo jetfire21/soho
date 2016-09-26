@@ -48,6 +48,10 @@
 	.block-media .movies-catalog h3, .block-media .movies-catalog p {
 		padding-left: 0;
 	}
+
+	.page-gallery .media-category{
+		font-size: 73px;
+	}
 }
 
 
@@ -301,7 +305,10 @@
 
 	.movie-content .movie-params p, .movie-content .movie-params span{ line-height: normal; }
 	.movie-params p, .movie-params span{ display:block; margin-bottom: 0; padding-bottom: 20px; }
-
+	.movie-content .feedback h4 {
+	    padding: 40px 0 20px 0;
+	    clear: both;
+	}
 	.bio_content .soc-network{ display: none; }
 	.bio_page footer {display: block;}
 

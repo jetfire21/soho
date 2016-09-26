@@ -1,0 +1,92 @@
+header, a, a:hover {
+  color: #fff;
+}
+
+.empty {
+  height: 150px;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  font: 20px "Montserrat";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+a:hover, a:focus {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+}
+
+h2, h2 a {
+  font: 88px "PlayfairDisplay-Black" !important;
+  margin-bottom: 20px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+.alex-overlay:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(32, 32, 32, 0.8) !important;
+  z-index: 9999;
+}
+
+header .shop-big-menu-btn {
+  padding: 25% 0;
+}
+header .shop-big-menu-btn img {
+  margin-left: 30px;
+}
+
+.shop-home-page #owl-shop-slider {
+  overflow: hidden;
+  width: 96%;
+  margin-left: 4%;
+}
+.shop-home-page .owl-wrapper-outer {
+  position: relative;
+  overflow: hidden;
+  background: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.shop-home-page .owl-wrapper-outer .grayscale {
+  opacity: 0.4;
+}
+.shop-home-page .owl-wrapper-outer img {
+  max-height: 951px;
+  z-index: 1;
+  position: relative;
+}
+.shop-home-page .owl-wrapper-outer .slider-text {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  z-index: 3;
+  display: block;
+}
+.shop-home-page .owl-wrapper-outer .slider-text h2 {
+  display: block;
+  color: #fff;
+}
+.shop-home-page .owl-wrapper-outer .slider-text a {
+  display: block;
+}
+
+/*# sourceMappingURL=main-shop.css.map */
