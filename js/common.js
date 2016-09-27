@@ -66,17 +66,17 @@ $(document).ready(function() {
 
 
 	  function moved(){
-			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page").index( $(".active")) + 1; 	
+			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
 			console.log(ind);
-			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
+			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
 	  }
 
- 	  $("header .owl-pagination .owl-page, #owl-gallery .owl-page").click(function(){
-			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page").index( $(".active")) + 1; 	
+ 	  $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").click(function(){
+			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
 			// console.log(ind);
-			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
+			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
  	 });
 
 
@@ -161,51 +161,16 @@ if (width > 767){
  
       navigation : true, // Show next and prev buttons
       autoPlay: false,
-      slideSpeed : 500,
-      paginationSpeed : 700,
+      slideSpeed : 400,
+      paginationSpeed : 500,
       // theme: "owl-theme",
       singleItem:true,
-      // afterMove: moved1,
-      // beforeMove: moved2,
-      // beforeInit: moved3,
+	  afterMove: moved,
      navigationText: ['','']
  
   });
 
-  $("#owl-shop-slider2").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      autoPlay: false,
-      slideSpeed : 500,
-      paginationSpeed : 700,
-      // theme: "owl-theme",
-      singleItem:true,
-      // afterMove: moved1,
-      // beforeMove: moved2,
-      // beforeInit: moved3,
-     navigationText: ['','']
- 
-  });
-
-  function moved1(){
-  	$(".grayscale .aa").text("111111111111111");
-  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
-
-
-  }
-  function moved2(){
-  	$(".grayscale .aa").text("111111111111111");
-  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
-
-
-  }
-  function moved3(){
-  	$(".grayscale .aa").text("111111111111111");
-  	$(".grayscale .aa").css({'background': 'rgba(0,0,0,0.6)'});
-
-
-  }
-
+     $("#owl-shop-slider .owl-page.active").append("<p class='num'>01</p>");
 
 
 });

@@ -35,7 +35,6 @@ h2, h2 a
 	background-color: rgba(32, 32, 32, 0.8) !important
 	z-index: 9999
 
-
 header
 	// max-height: 951px
 
@@ -45,13 +44,57 @@ header
 		img
 			margin-left: 30px 
 
+.header-top
+	// overflow: hidden
+	margin: 40px 0
+	.cart
+		background: url("../img/shop/cart.png") no-repeat
+		width: 45px
+		height: 45px
+		display: inline-block
+		margin-right: 80px
+		position: relative
+		cursor: pointer
 
-.shop-home-page
+
+		span 
+			position: absolute
+			bottom: -5px
+			right: -14px
+			background: #000
+			color: #fff
+			border-radius: 17px
+			width: 35px
+			height: 35px
+			padding: 8px 7px 0 0
+			font-weight: bold
+			font: 16px "Montserrat"
+
+	.profile
+		background: url("../img/shop/profile.png") no-repeat
+		width: 45px
+		height: 45px
+		display: inline-block
+		cursor: pointer
+
+	.shop-btn-mobile
+		line-height: 47px
+
+h1.main-name
+	color: #000
+	text-align: center
+	text-transform: uppercase
+	margin: 0
+	font: 40px "Ailerons"
+	padding: 0
+
+
+
 		
-	#owl-shop-slider
-		overflow: hidden
-		width: 96%
-		margin-left: 4%
+#owl-shop-slider
+	overflow: hidden
+	width: 96%
+	margin-left: 4%
 
 	.owl-wrapper-outer
 		position: relative
@@ -84,11 +127,35 @@ header
 			z-index: 3
 			display: block
 
-			h2
+			h2, a
 				display: block
 				color: #fff
 
-			a
-				display: block
 
+	.owl-controls
+		position: absolute
+		right: 0
+		top: 34%
+		z-index: 3
 
+	.owl-page
+		width: 15px
+		height: 1px
+		color: blue
+		background: #fff
+		margin: 40px 50px 40px 0
+		position: relative
+
+		.num
+			color: #fff
+			// font: 18px "Montserrat-Regular"
+			font: 18px "Montserrat-Light"
+			position: absolute
+			right: 41px
+			top: -9px
+			letter-spacing: 4px
+
+	.owl-page.active
+		height: 4px
+		margin: 45px 0 45px 36px
+		width: 28px
