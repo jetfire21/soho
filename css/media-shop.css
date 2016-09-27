@@ -2,13 +2,18 @@
   
   .header-top .cart { margin-right: 45px; }
    .header-top .shop-btn-mobile{ line-height: 40px; }
+   #owl-shop-slider .slider-text{ padding: 0 15%; }
+   #owl-shop-slider .slider-text h2{ line-height: 64px !important; }
+   .shop-big-menu-btn img{ width: 80px; }
 
 }
 
 @media only screen and (max-width : 1200px) {
   
   .header-top .cart { margin-right: 35px; }
+  .header-top .profile {margin-right: 0;}
   #owl-shop-slider{ width: 100%; margin-left: 0; }
+
   #owl-shop-slider .grayscale{ overflow: hidden; min-height: 700px;  height: 700px; }
   #owl-shop-slider img{  width: 1686px; max-width: inherit; left:-20%; top:-10%;}
 
@@ -17,12 +22,23 @@
 @media only screen and (max-width : 992px) {
   
   .header-top .cart { margin-right: 15px; }
+    #owl-shop-slider .slider-text{ top:36%; }
+
+  #owl-shop-slider .slider-text h2{ line-height: 68px !important; }
+     /*#owl-shop-slider .slider-text * {padding-right:  20%;}*/
+
 
 }
 
 @media only screen and (max-width : 768px) {
   
   h1.main-name { font-size: 31px; }
+
+  .shop-home-page .slider-text h2{ font-size: 70px !important; }
+  .shop-home-page .slider-text a{ font-size: 16px; }
+   #owl-shop-slider .slider-text{ padding: 0 20% 0 10%; }
+    #owl-shop-slider .slider-text h2{ line-height: 60px !important; }
+
 
 }
 
@@ -34,5 +50,13 @@
  .header-top .cart {   background-size: cover; width: 32px; height: 29px; margin-right: 0; }
  .header-top .cart span{ width: 25px; height: 25px; border-radius: 12px; bottom:-8px; right:-4px; padding: 3px 0 0 4px; }
  .padding-left-del{ padding-left: 0 !important; text-align:left;}
+
+  #owl-shop-slider .grayscale{ min-height: 480px;  height: 480px; }
+  #owl-shop-slider img {width: 860px; top:0; left:-30%;}
+  
+   #owl-shop-slider .slider-text {padding: 0 25% 0 0;}
+    #owl-shop-slider .slider-text h2{ line-height: 47px !important; }
+    .shop-home-page .slider-text h2{ font-size: 51px !important; }
+
 
 }

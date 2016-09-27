@@ -80,6 +80,7 @@ header .shop-big-menu-btn img {
   height: 45px;
   display: inline-block;
   cursor: pointer;
+  margin-right: 15px;
 }
 .header-top .shop-btn-mobile {
   line-height: 47px;
@@ -115,18 +116,17 @@ h1.main-name {
   opacity: 0.4;
 }
 #owl-shop-slider .owl-wrapper-outer img {
-  max-height: 951px;
   z-index: 1;
   position: relative;
 }
-#owl-shop-slider .owl-wrapper-outer .slider-text {
+#owl-shop-slider .slider-text {
   position: absolute;
-  top: 40%;
-  right: 10%;
+  top: 43%;
+  padding: 0 17%;
   z-index: 3;
   display: block;
 }
-#owl-shop-slider .owl-wrapper-outer .slider-text h2, #owl-shop-slider .owl-wrapper-outer .slider-text a {
+#owl-shop-slider .slider-text h2, #owl-shop-slider .slider-text a {
   display: block;
   color: #fff;
 }
