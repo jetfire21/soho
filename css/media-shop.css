@@ -1,4 +1,33 @@
+@media only screen and (max-width : 1600px) {
+
+  .top-menu .vert-line{
+    margin: 25px auto 25px auto;
+  }
+  .top-menu .close-top-menu{
+    top: 107px;
+    left:3%;
+  }
+  
+    .foot-menu a{ font-size: 17px; letter-spacing: 5px; }
+
+}
 @media only screen and (max-width : 1366px) {
+
+   .top-menu .vert-line {
+      height: 45px;
+   }
+
+   .top-menu a{font-size:17px;}
+
+   .top-menu ul li{
+    padding-right: 45px;
+   }
+
+   .top-menu .close-top-menu{
+      top:91px;
+      width: 27px;
+   }
+
   
   .header-top .cart { margin-right: 45px; }
    .header-top .shop-btn-mobile{ line-height: 40px; }
@@ -6,16 +35,33 @@
    #owl-shop-slider .slider-text h2{ line-height: 64px !important; }
    .shop-big-menu-btn img{ width: 80px; }
 
+
+    footer{ padding:90px 0 75px 0; }
+  .home-movies h3, .monser-gray, .foot-menu a, .blog-img-text h3, .blog-img-text a, .blog .monser-gray { font-size: 16px;}
+
+   a { font-size: 16px !important; }
+   .foot-menu {  margin-top: 75px; }
+
+  .monser-gray, .foot-menu a{ font-size: 16px; }
 }
 
 @media only screen and (max-width : 1200px) {
-  
+
+  .top-menu ul li{ padding-right: 32px; }
+  .top-menu ul li a{ letter-spacing: 5px; }
+
   .header-top .cart { margin-right: 35px; }
   .header-top .profile {margin-right: 0;}
   #owl-shop-slider{ width: 100%; margin-left: 0; }
 
   #owl-shop-slider .grayscale{ overflow: hidden; min-height: 700px;  height: 700px; }
   #owl-shop-slider img{  width: 1686px; max-width: inherit; left:-20%; top:-10%;}
+
+  .foot-menu a {
+      font-size: 16px;
+      letter-spacing: 3px;
+  }
+
 
 }
 
@@ -27,6 +73,7 @@
   #owl-shop-slider .slider-text h2{ line-height: 68px !important; }
      /*#owl-shop-slider .slider-text * {padding-right:  20%;}*/
 
+    .foot-menu li{ display: block !important; margin-right: 0 !important; margin-bottom: 20px; }
 
 }
 
@@ -43,20 +90,44 @@
 }
 
 @media only screen and (max-width : 480px) {
-  
-  h1.main-name { font-size: 20px; line-height: 30px;}
-  .header-top .shop-btn-mobile { line-height: 28px;}
+  .header-top {
+    margin: 30px 0;
+}
+  h1.main-name { font-size: 30px; line-height: 31px;}
+  .header-top .shop-btn-mobile { line-height: 36px;}
  .header-top .shop-btn-mobile img { width: 40px; }
  .header-top .cart {   background-size: cover; width: 32px; height: 29px; margin-right: 0; }
- .header-top .cart span{ width: 25px; height: 25px; border-radius: 12px; bottom:-8px; right:-4px; padding: 3px 0 0 4px; }
+ .header-top .cart span{ width: 25px; height: 25px; border-radius: 12px; bottom:-8px; right:-4px; padding: 4px 0 0 4px; }
  .padding-left-del{ padding-left: 0 !important; text-align:left;}
 
   #owl-shop-slider .grayscale{ min-height: 480px;  height: 480px; }
   #owl-shop-slider img {width: 860px; top:0; left:-30%;}
   
-   #owl-shop-slider .slider-text {padding: 0 25% 0 0;}
+   #owl-shop-slider .slider-text {padding: 0 21% 0 0;}
     #owl-shop-slider .slider-text h2{ line-height: 47px !important; }
     .shop-home-page .slider-text h2{ font-size: 51px !important; }
 
+    #owl-shop-slider .owl-page.active{
+      margin: 30px 0 30px 36px;
+      width: 15px;
+  }
+   #owl-shop-slider .owl-page{
+      margin: 30px 0 30px 9px;
+      /*width: 25px;*/
+  }
+  #owl-shop-slider .owl-page .num{ right: 20px; }
+    #owl-shop-slider .slider-text{ top:33%; }
 
+  footer { padding: 100px 0; }
+  .foot-menu { display: none; }
+  footer .soc-network a{ padding-right: 20px; }
+
+}
+
+
+
+
+@media only screen and (min-width : 1600px) {
+
+  .container{ /*width: 1460px;*/  width: 1500px; }
 }

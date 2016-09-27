@@ -20,11 +20,11 @@ $(document).ready(function() {
 
 
 
-	$(".big-btn-bar").click(function(){
+	$(".big-btn-bar, .shop-big-menu-btn img").click(function(){
 		$(".top-menu").show();
 		// $(".bg-color").addClass("dark-bg");
 		$(".alex-wrap").addClass("alex-overlay");
-		console.log("dddd");
+		// console.log("dddd");
 	});
 
 	$(".close-top-menu").click(function(){
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		$(".alex-wrap").removeClass("alex-overlay");
 	});
 
-	$(".btn-bar-top").click(function(){
+	$(".btn-bar-top, .shop-btn-mobile img").click(function(){
 		// $(".mob-menu").show();
 		$(".mob-menu").addClass("show_mob_menu");
 	});
