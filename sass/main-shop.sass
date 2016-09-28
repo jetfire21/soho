@@ -1,3 +1,5 @@
+html,body, .alex-wrap
+	height: 100%
 header,a,a:hover
 	color: #fff
 .empty
@@ -407,7 +409,7 @@ footer
 
 
 
-.shop-cat-page 
+.shop-cat-page, .single-product
 
 	.shop-big-menu-btn
 		background: #e5e5e5
@@ -420,11 +422,19 @@ footer
 			position: relative
 			margin-top: -25px
 
+%monserrat-bold-29
+	font: 29px "Montserrat" !important
+	text-transform: uppercase
+	letter-spacing: 10px
+
+.shop-cat-page 
+
 	h2.title-category
 		text-align: center
-		font: 29px "Montserrat" !important
-		text-transform: uppercase
-		letter-spacing: 10px
+		// font: 29px "Montserrat" !important
+		// text-transform: uppercase
+		// letter-spacing: 10px
+		@extend %monserrat-bold-29
 		margin: 30px 0
 
 	.prod-no-slider
@@ -497,4 +507,62 @@ footer
 
 	.owl-pagination
 		margin-left: -9%
+
+
+
+
+
+
+
+.single-product
+
+	header
+		position: absolute
+		width: 100%
+
+	.header-top
+		position: relative
+		z-index: 2
+	
+	.block-left
+		background: #e5e5e5
+		overflow: hidden
+		position: relative 
+		// height: 800px
+		height: 100%
+
+		.thumbs
+			margin-top: 100px
+
+			img 
+				margin-right: 20px
+
+	.shop-single-imgs
+		position: absolute
+		// width: 562px
+		width: 60%
+		// height: 84%
+		top: 26%
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+
+	.block-right
+		overflow: hidden
+		position: relative 
+		// padding-top: 100px
+		padding-top: 6%
+
+		h3
+			@extend %monserrat-bold-29
+			color: #ddd
+		h2
+			font-size: 60px !important
+
+		.dop-info a
+			display: block
+
+	.cat-and-title
+		margin: 30% 0 0 0
 

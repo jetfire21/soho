@@ -1,3 +1,7 @@
+html, body, .alex-wrap {
+  height: 100%;
+}
+
 header, a, a:hover {
   color: #fff;
 }
@@ -396,22 +400,26 @@ footer .soc-network a {
   color: #fff;
 }
 
-.shop-cat-page .shop-big-menu-btn {
+.shop-cat-page .shop-big-menu-btn, .single-product .shop-big-menu-btn {
   background: #e5e5e5;
   height: 800px;
   padding: 0;
   position: relative;
 }
-.shop-cat-page .shop-big-menu-btn img {
+.shop-cat-page .shop-big-menu-btn img, .single-product .shop-big-menu-btn img {
   top: 50%;
   position: relative;
   margin-top: -25px;
 }
-.shop-cat-page h2.title-category {
-  text-align: center;
+
+.shop-cat-page h2.title-category, .single-product .block-right h3 {
   font: 29px "Montserrat" !important;
   text-transform: uppercase;
   letter-spacing: 10px;
+}
+
+.shop-cat-page h2.title-category {
+  text-align: center;
   margin: 30px 0;
 }
 .shop-cat-page .prod-no-slider {
@@ -481,6 +489,53 @@ footer .soc-network a {
 }
 #owl-shop-products .owl-pagination {
   margin-left: -9%;
+}
+
+.single-product header {
+  position: absolute;
+  width: 100%;
+}
+.single-product .header-top {
+  position: relative;
+  z-index: 2;
+}
+.single-product .block-left {
+  background: #e5e5e5;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.single-product .block-left .thumbs {
+  margin-top: 100px;
+}
+.single-product .block-left .thumbs img {
+  margin-right: 20px;
+}
+.single-product .shop-single-imgs {
+  position: absolute;
+  width: 60%;
+  top: 26%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.single-product .block-right {
+  overflow: hidden;
+  position: relative;
+  padding-top: 6%;
+}
+.single-product .block-right h3 {
+  color: #ddd;
+}
+.single-product .block-right h2 {
+  font-size: 60px !important;
+}
+.single-product .block-right .dop-info a {
+  display: block;
+}
+.single-product .cat-and-title {
+  margin: 30% 0 0 0;
 }
 
 /*# sourceMappingURL=main-shop.css.map */
