@@ -10,6 +10,26 @@
   
     .foot-menu a{ font-size: 17px; letter-spacing: 5px; }
 
+    .shop-cat-left > div, .shop-cat-right > div{ max-width: 90%; }
+    .sunglasses-cat img { width: 95%; }
+    .shoes-cat img { width: 106%; }
+    .handbags-cat img{ width: 90%; }
+    .perfume-cat img{ width: 73%; }
+
+    .shoes-cat {
+      height: 800px;
+    }
+/*    
+    .sunglasses-cat {
+        height: 380px;
+    }
+
+    .handbags-cat, .perfume-cat {
+      height: 500px;
+    }
+*/
+
+
 }
 @media only screen and (max-width : 1366px) {
 
@@ -33,7 +53,7 @@
    .header-top .shop-btn-mobile{ line-height: 40px; }
    #owl-shop-slider .slider-text{ padding: 0 15%; }
    #owl-shop-slider .slider-text h2{ line-height: 64px !important; }
-   .shop-big-menu-btn img{ width: 80px; }
+   header .shop-big-menu-btn img{ width: 75px; margin-left: 20px;}
 
 
     footer{ padding:90px 0 75px 0; }
@@ -61,7 +81,34 @@
       font-size: 16px;
       letter-spacing: 3px;
   }
+  .shop-categories{ margin-top: 90px; }
 
+ .shop-categories h2{
+    font-size: 30px !important;
+    margin-bottom: 6px;
+  }
+  .shop-categories p{
+     margin-bottom: 10px;
+  }
+
+  .shoes-cat {
+      height: 650px;
+    }
+    
+    .sunglasses-cat {
+        height: 330px;
+    }
+
+    .handbags-cat, .perfume-cat {
+      height: 450px;
+    }
+
+  .perfume-cat img {
+      width: 64%;
+  }
+  .handbags-cat img { bottom: 40px; }
+  .sunglasses-cat img { bottom: 45px; }
+  
 
 }
 
@@ -74,6 +121,19 @@
      /*#owl-shop-slider .slider-text * {padding-right:  20%;}*/
 
     .foot-menu li{ display: block !important; margin-right: 0 !important; margin-bottom: 20px; }
+   
+    .handbags-cat, .shoes-cat, .sunglasses-cat, .perfume-cat{ margin: 80px auto; }
+      .handbags-cat {margin-top: 0;}
+     /*.shop-categories img { margin-bottom: 60px;}*/
+    .shop-cat-right > div, .shop-cat-right, .shop-cat-left { float: none !important; }
+    .shoes-cat img{ top:140px; }
+    .handbags-cat, .perfume-cat {
+      height: 580px;
+    }
+    .sunglasses-cat {
+        height: 400px;
+    }
+    .perfume-cat { margin-bottom: 0; }
 
 }
 
@@ -85,9 +145,17 @@
   .shop-home-page .slider-text a{ font-size: 16px; }
    #owl-shop-slider .slider-text{ padding: 0 20% 0 10%; }
     #owl-shop-slider .slider-text h2{ line-height: 60px !important; }
+    .shop-categories .container {padding: 0;}
 
 
 }
+
+@media only screen and (max-width : 600px) {
+
+   .handbags-cat img{ right: -16px; }
+
+}
+
 
 @media only screen and (max-width : 480px) {
   .header-top {
@@ -118,13 +186,39 @@
   #owl-shop-slider .owl-page .num{ right: 20px; }
     #owl-shop-slider .slider-text{ top:33%; }
 
+    .shop-categories h2 {
+      font-size: 17px !important;
+  }
+  .shop-categories p {
+    font: 14px "Montserrat";
+    letter-spacing: 6px;
+  }
+  .shop-categories a {font-size: 14px !important;}
+  .handbags-cat, .shoes-cat, .sunglasses-cat, .perfume-cat{ height: 450px; }
+  .handbags-cat img {
+    right: -10px;
+}
+.sunglasses-cat img {
+    left: -19px;
+  }
+
+ .shoes-cat img {
+    top: 112px;
+}
+
   footer { padding: 100px 0; }
   .foot-menu { display: none; }
   footer .soc-network a{ padding-right: 20px; }
 
 }
 
+@media only screen and (max-width : 360px) {
 
+  .handbags-cat, .shoes-cat, .sunglasses-cat, .perfume-cat{ height: 350px; }
+ .shoes-cat{ height: 360px; }
+
+
+}
 
 
 @media only screen and (min-width : 1600px) {

@@ -319,26 +319,31 @@ footer .soc-network a {
   letter-spacing: 12px;
   margin-bottom: 20px;
 }
-.shop-categories .block-1-black, .shop-categories .block-2-gray, .shop-categories .block-3-gray, .shop-categories .block-4-pink {
+
+.handbags-cat, .shoes-cat, .sunglasses-cat, .perfume-cat {
   padding: 30px 35px;
   position: relative;
 }
-.shop-categories .block-1-black, .shop-categories .block-2-gray {
+
+.handbags-cat, .shoes-cat {
   margin-bottom: 120px;
 }
-.shop-categories .block-1-black {
+
+.handbags-cat {
   width: 540px;
   height: 600px;
   background: #000;
 }
-.shop-categories .block-1-black img {
+.handbags-cat img {
   position: absolute;
   bottom: 60px;
 }
-.shop-categories .block-1-black * {
+
+.handbags-cat * {
   color: #fff;
 }
-.shop-categories .block-2-gray {
+
+.shoes-cat {
   width: 552px;
   height: 970px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f5f5f5+100 */
@@ -349,31 +354,45 @@ footer .soc-network a {
   background: linear-gradient(to bottom, #f8f8f8 0%, #f5f5f5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f5f5f5',GradientType=0 );
 }
-.shop-categories .block-2-gray img {
+.shoes-cat img {
   position: absolute;
   bottom: 60px;
   left: 0;
   top: 180px;
 }
-.shop-categories .block-3-gray {
+
+.sunglasses-cat {
   background: #f0f0f0;
   width: 700px;
   height: 480px;
 }
-.shop-categories .block-3-gray img {
+.sunglasses-cat img {
   position: absolute;
   left: -40px;
   bottom: 65px;
 }
-.shop-categories .block-4-pink {
+
+.perfume-cat {
   background: #f7d5d3;
   width: 552px;
   height: 600px;
 }
-.shop-categories .block-4-pink img {
+.perfume-cat img {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+sun {
+  height: 380px;
+}
+
+per, he {
+  height: 500px;
+}
+
+sh {
+  height: 870px;
 }
 
 /*# sourceMappingURL=main-shop.css.map */
