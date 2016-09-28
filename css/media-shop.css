@@ -31,8 +31,16 @@
     }
 */
 
+   #owl-shop-products .product { margin-left: -30px; }
 
 }
+
+@media only screen and (max-width : 1500px) {
+
+ 
+
+}
+
 @media only screen and (max-width : 1366px) {
 
    .top-menu .vert-line {
@@ -117,6 +125,9 @@
   .handbags-cat img { bottom: 40px; }
   .sunglasses-cat img { bottom: 45px; }
   
+     #owl-shop-products .product,  #owl-shop-products .owl-pagination { margin-left: 0; }
+
+     /*#owl-shop-products .wrap_prod_img img{ width: 88%; }*/
 
 }
 
@@ -147,6 +158,10 @@
         height: 400px;
     }
     .perfume-cat { margin-bottom: 0; }
+
+    #owl-shop-products .wrap_prod_img img { width: auto; }
+   .shop-cat-page h2.title-category {  margin-bottom: 50px }
+
 
 }
 
@@ -224,6 +239,8 @@
   footer { padding: 100px 0; }
   .foot-menu { display: none; }
   footer .soc-network a{ padding-right: 20px; }
+
+  .shop-cat-page h2.title-category{ font-size: 21px !important; }
 
 }
 

@@ -66,17 +66,17 @@ $(document).ready(function() {
 
 
 	  function moved(){
-			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
+			var ind = $("#owl-demo .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
 			console.log(ind);
-			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+			$("#owl-demo .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
+			$("#owl-demo .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
 	  }
 
- 	  $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").click(function(){
-			var ind = $("header .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
+ 	  $("#owl-demor .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").click(function(){
+			var ind = $("#owl-demo .owl-pagination .owl-page, #owl-gallery .owl-page, #owl-shop-slider .owl-page").index( $(".active")) + 1; 	
 			// console.log(ind);
-			$("header .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
-			$("header .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
+			$("#owl-demo .owl-pagination .owl-page .num, #owl-gallery .owl-page .num, #owl-shop-slider .owl-page .num").remove();
+			$("#owl-demo .owl-pagination .owl-page.active, #owl-gallery .owl-page.active, #owl-shop-slider .owl-page.active").append("<p class='num'>0" + ind + "</p>");
  	 });
 
 
@@ -171,6 +171,21 @@ if (width > 767){
   });
 
      $("#owl-shop-slider .owl-page.active").append("<p class='num'>01</p>");
+
+if (width > 991){
+   $("#owl-shop-products").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      autoPlay: false,
+      slideSpeed : 400,
+      paginationSpeed : 500,
+      // theme: "owl-theme",
+      singleItem:true,
+	  afterMove: moved,
+     navigationText: ['','']
+ 
+  });
+}
 
 
 });
