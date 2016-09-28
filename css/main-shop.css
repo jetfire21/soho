@@ -306,6 +306,16 @@ footer .soc-network a {
 /* ************ SHOP CATEGORIES *************** */
 .shop-categories {
   margin: 50px 0 120px 0;
+  position: relative;
+}
+.shop-categories .single-link {
+  position: absolute;
+  bottom: 15%;
+  margin-left: 35px;
+  font: 40px "Montserrat" !important;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  display: block;
 }
 .shop-categories h2 {
   font: 40px "Montserrat" !important;
@@ -382,17 +392,8 @@ footer .soc-network a {
   bottom: 0;
   right: 0;
 }
-
-sun {
-  height: 380px;
-}
-
-per, he {
-  height: 500px;
-}
-
-sh {
-  height: 870px;
+.perfume-cat * {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main-shop.css.map */

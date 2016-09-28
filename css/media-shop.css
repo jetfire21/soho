@@ -10,6 +10,8 @@
   
     .foot-menu a{ font-size: 17px; letter-spacing: 5px; }
 
+    .shop-categories .single-link{ bottom: 8%; }
+
     .shop-cat-left > div, .shop-cat-right > div{ max-width: 90%; }
     .sunglasses-cat img { width: 95%; }
     .shoes-cat img { width: 106%; }
@@ -63,6 +65,12 @@
    .foot-menu {  margin-top: 75px; }
 
   .monser-gray, .foot-menu a{ font-size: 16px; }
+
+  .shop-categories .single-link { font-size: 30px !important;}
+ .shop-categories h2{
+    font-size: 30px !important;
+  }
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -82,7 +90,7 @@
       letter-spacing: 3px;
   }
   .shop-categories{ margin-top: 90px; }
-
+  .shop-categories .single-link { font-size: 30px !important; bottom: 12%; }
  .shop-categories h2{
     font-size: 30px !important;
     margin-bottom: 6px;
@@ -100,7 +108,7 @@
     }
 
     .handbags-cat, .perfume-cat {
-      height: 450px;
+      height: 500px;
     }
 
   .perfume-cat img {
@@ -122,6 +130,11 @@
 
     .foot-menu li{ display: block !important; margin-right: 0 !important; margin-bottom: 20px; }
    
+}
+
+@media only screen and (max-width : 991px) {
+  
+      .shop-categories .single-link { position: static; margin-top: 80px; margin-left:0; text-align: center; }
     .handbags-cat, .shoes-cat, .sunglasses-cat, .perfume-cat{ margin: 80px auto; }
       .handbags-cat {margin-top: 0;}
      /*.shop-categories img { margin-bottom: 60px;}*/
@@ -136,6 +149,7 @@
     .perfume-cat { margin-bottom: 0; }
 
 }
+
 
 @media only screen and (max-width : 768px) {
   
@@ -186,8 +200,9 @@
   #owl-shop-slider .owl-page .num{ right: 20px; }
     #owl-shop-slider .slider-text{ top:33%; }
 
-    .shop-categories h2 {
-      font-size: 17px !important;
+    .shop-categories h2, .shop-categories .single-link {
+      font-size: 23px !important;
+      letter-spacing: 5px;
   }
   .shop-categories p {
     font: 14px "Montserrat";
