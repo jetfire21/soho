@@ -412,7 +412,7 @@ footer .soc-network a {
   margin-top: -25px;
 }
 
-.shop-cat-page h2.title-category, .single-product .block-right h3 {
+.shop-cat-page h2.title-category, .single-product .block-right h3, .single-product .wrap-price-cart p {
   font: 29px "Montserrat" !important;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -491,6 +491,20 @@ footer .soc-network a {
   margin-left: -9%;
 }
 
+.single-product h1.main-name {
+  margin-right: -8%;
+}
+.single-product .shop-big-menu-btn {
+  height: 100%;
+}
+.single-product .shop-big-menu-btn img {
+  position: absolute;
+  margin-top: 0;
+  left: 25px;
+}
+.single-product .row {
+  height: 100%;
+}
 .single-product header {
   position: absolute;
   width: 100%;
@@ -503,18 +517,44 @@ footer .soc-network a {
   background: #e5e5e5;
   overflow: hidden;
   position: relative;
+  min-height: 800px;
   height: 100%;
+}
+.single-product .block-left .single-main-img img {
+  margin: auto;
 }
 .single-product .block-left .thumbs {
   margin-top: 100px;
 }
 .single-product .block-left .thumbs img {
-  margin-right: 20px;
+  width: 100%;
+  margin: auto;
+}
+.single-product .block-left .thumbs > div {
+  position: relative;
+  z-index: 1;
+  width: 71px;
+  height: 80px;
+  line-height: 80px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.single-product .block-left .thumbs > div:hover:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
 }
 .single-product .shop-single-imgs {
   position: absolute;
   width: 60%;
-  top: 26%;
+  top: 23%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -523,19 +563,28 @@ footer .soc-network a {
 .single-product .block-right {
   overflow: hidden;
   position: relative;
-  padding-top: 6%;
+  padding: 8% 0 0 35px;
 }
 .single-product .block-right h3 {
   color: #ddd;
+  margin-bottom: 40px;
 }
 .single-product .block-right h2 {
   font-size: 60px !important;
 }
 .single-product .block-right .dop-info a {
   display: block;
+  font-size: 16px;
+  padding-bottom: 20px;
 }
 .single-product .cat-and-title {
-  margin: 30% 0 0 0;
+  margin: 34% 0 0 0;
+}
+.single-product .wrap-price-cart {
+  margin-top: 130px;
+}
+.single-product .wrap-price-cart p {
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=main-shop.css.map */
