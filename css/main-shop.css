@@ -52,12 +52,15 @@ h2, h2 a {
   color: #a3a3a3;
   letter-spacing: 5px;
 }
-
-header .shop-big-menu-btn {
+.monser-gray .shop-big-menu-btn, .foot-menu a .shop-big-menu-btn {
   padding: 25% 0;
 }
-header .shop-big-menu-btn img {
+
+.shop-big-menu-btn img {
   margin-left: 30px;
+}
+
+.shop-big-menu-btn img {
   cursor: pointer;
 }
 
@@ -400,19 +403,23 @@ footer .soc-network a {
   color: #fff;
 }
 
-.shop-cat-page .shop-big-menu-btn, .single-product .shop-big-menu-btn {
+.shop-cat-page .shop-big-menu-btn, .single-product .shop-big-menu-btn, .cart-page .shop-big-menu-btn, .shop-home-page .shop-big-menu-btn {
   background: #e5e5e5;
   height: 800px;
   padding: 0;
   position: relative;
 }
-.shop-cat-page .shop-big-menu-btn img, .single-product .shop-big-menu-btn img {
+.shop-cat-page .shop-big-menu-btn img, .single-product .shop-big-menu-btn img, .cart-page .shop-big-menu-btn img, .shop-home-page .shop-big-menu-btn img {
   top: 50%;
   position: relative;
   margin-top: -25px;
 }
 
-.shop-cat-page h2.title-category, .single-product .block-right h3, .single-product .wrap-price-cart p {
+.shop-home-page .shop-big-menu-btn {
+  background: #fff;
+}
+
+.shop-cat-page h2.title-category, .single-product .block-right h3, .single-product .wrap-price-cart p, .cart-page .wrap_cart h3 {
   font: 29px "Montserrat" !important;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -506,7 +513,7 @@ footer .soc-network a {
 .single-product .row {
   height: 100%;
 }
-.single-product header {
+.single-product .shop-big-menu-btn {
   position: absolute;
   width: 100%;
 }
@@ -582,6 +589,130 @@ footer .soc-network a {
 }
 .single-product .wrap-price-cart p {
   margin-bottom: 25px;
+}
+
+.cart-page .shop-big-menu-btn {
+  background: #fff;
+}
+.cart-page .prod_title h2, .cart-page .prod_title a {
+  font: bold 23px "Montserrat-Light" !important;
+  margin-bottom: 11px !important;
+}
+.cart-page .prod_title p, .cart-page .wrap_cart th, .cart-page .table-mobile .first-td {
+  font: bold 16px "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.cart-page .wrap_cart {
+  padding-left: 40px;
+}
+.cart-page .wrap_cart .prod_title {
+  padding-left: 45px;
+}
+.cart-page .wrap_cart h3 {
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cart-page .wrap_cart td {
+  vertical-align: middle;
+  padding: 20px 0;
+}
+.cart-page .table-desctop table {
+  border-bottom: 1px solid #f0f2f7;
+}
+.cart-page .table-desctop th {
+  color: #fff;
+}
+.cart-page .table-desctop th:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  padding-left: 20px;
+}
+.cart-page .table-desctop th:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.cart-page .table-desctop tr:first-child {
+  background: #000;
+  border-radius: 5px;
+}
+.cart-page .del-product {
+  float: right;
+  padding-right: 50px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.cart-page .cart-img {
+  width: 114px;
+  position: relative;
+}
+.cart-page .price span, .cart-page .str-total-sum, .cart-page .str-cart-action a, .cart-page input {
+  font: bold 16px "Montserrat-Light";
+  text-transform: uppercase;
+}
+.cart-page .price span {
+  font-size: 20px;
+}
+.cart-page .str-cart-action {
+  margin-top: 120px;
+}
+.cart-page .str-total-sum {
+  width: 430px;
+  float: right;
+  margin-top: 300px;
+}
+.cart-page .str-total-sum span {
+  font-size: 26px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.cart-page .proc-checkout {
+  background: #000;
+  padding: 15px 40px;
+  color: #fff;
+  display: table;
+  float: right;
+  margin-top: -20px;
+}
+.cart-page .wrap_quantity {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 25px;
+  width: 137px;
+}
+.cart-page .wrap_quantity input {
+  padding: 0 5px 0 17px;
+  border: 0;
+  outline: 0;
+}
+.cart-page .wrap_quantity .minus, .cart-page .wrap_quantity .plus {
+  font: bolder 25px Verdana;
+  cursor: pointer;
+}
+.cart-page .wrap_quantity .minus, .cart-page .wrap_quantity .plus, .cart-page .wrap_quantity input {
+  float: left;
+  width: 45px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.table-mobile {
+  border-bottom: 1px solid #f0f2f7;
+  padding-bottom: 20px;
+}
+.table-mobile td {
+  border: 0 !important;
+}
+.table-mobile td:nth-child(2) {
+  padding-left: 50px;
+}
+.table-mobile .first-td {
+  color: #fff;
+  background: #000;
+  padding-left: 20px !important;
+  width: 30%;
 }
 
 /*# sourceMappingURL=main-shop.css.map */
