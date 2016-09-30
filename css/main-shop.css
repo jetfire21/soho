@@ -27,6 +27,10 @@ a:hover, a:focus {
   border: 0;
 }
 
+h3.error {
+  padding: 70px 30px 220px 5%;
+}
+
 h2, h2 a {
   font: 88px "PlayfairDisplay-Black" !important;
   margin-bottom: 20px;
@@ -467,6 +471,8 @@ footer .soc-network a {
   min-height: 270px;
   position: relative;
   margin-bottom: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #owl-shop-products .wrap_prod_img img {
   position: absolute;
@@ -475,6 +481,8 @@ footer .soc-network a {
   display: block;
   left: 0;
   right: 0;
+  max-height: 270px;
+  width: auto;
 }
 #owl-shop-products .owl-controls {
   padding-top: 80px;
