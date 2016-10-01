@@ -38,7 +38,7 @@ $(document).ready(function() {
 		$(".top-menu").show();
 		// $(".bg-color").addClass("dark-bg");
 		$(".alex-wrap").addClass("alex-overlay");
-		// console.log("dddd");
+		console.log("dddd");
 	});
 
 	$(".close-top-menu").click(function(){
