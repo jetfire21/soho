@@ -531,6 +531,9 @@ footer
 
 
 
+.single-product .block-left .single-main-img, .block-right
+	height: 600px
+	position: relative
 
 .single-product
 	
@@ -560,6 +563,7 @@ footer
 	.header-top
 		position: relative
 		z-index: 2
+
 	
 	.block-left
 		background: #e5e5e5
@@ -577,9 +581,15 @@ footer
 
 			img
 				margin: auto
+				bottom: 0
+				position: absolute
+				// max-height: 350px
+				// max-width: 350px
+				// left: 0
+				// right: 0
 
 		.thumbs
-			margin-top: 90px
+			margin-top: 80px
 
 			img 
 				width: 100%
@@ -596,6 +606,7 @@ footer
 				float: left
 				margin-right: 25px
 				margin-bottom: 10px
+				cursor: pointer
 
 				&:hover:before
 					content: ''
@@ -620,13 +631,22 @@ footer
 		bottom: 0
 		left: 0
 		right: 0
-		margin: 38% auto 0 auto
+		// margin: 38% auto 0 auto
+		margin: 0 auto !important
 
 	.block-right
 		overflow: hidden
 		position: relative 
 		// padding-top: 100px
-		padding: 8% 0 0 35px 
+		// padding: 8% 0 0 35px 
+		padding: 0 0 0 35px !important
+
+		height: 765px
+
+		.wrap-cat-cart
+			position: absolute
+			bottom: 0
+		
 
 		h3
 			@extend %monserrat-bold-29
@@ -635,16 +655,20 @@ footer
 		h2
 			font-size: 60px !important
 
-		.dop-info a
+		.dop-info
+			padding-top: 24%
+
+		a
 			display: block
 			font-size: 16px
 			padding-bottom: 20px
 
 	.cat-and-title
 		margin: 30% 0 0 0
+		margin: 0 !important
 
 	.wrap-price-cart
-		margin-top: 130px
+		margin-top: 110px
 		p
 			@extend %monserrat-bold-29
 			margin-bottom: 25px

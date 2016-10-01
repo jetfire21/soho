@@ -509,6 +509,11 @@ footer .soc-network a {
   margin-left: -9%;
 }
 
+.single-product .block-left .single-main-img, .block-right {
+  height: 600px;
+  position: relative;
+}
+
 .single-product h1.main-name {
   margin-right: -8%;
 }
@@ -539,9 +544,11 @@ footer .soc-network a {
 }
 .single-product .block-left .single-main-img img {
   margin: auto;
+  bottom: 0;
+  position: absolute;
 }
 .single-product .block-left .thumbs {
-  margin-top: 90px;
+  margin-top: 80px;
 }
 .single-product .block-left .thumbs img {
   width: 100%;
@@ -556,6 +563,7 @@ footer .soc-network a {
   float: left;
   margin-right: 25px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .single-product .block-left .thumbs > div:hover:before {
   content: "";
@@ -573,12 +581,17 @@ footer .soc-network a {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 38% auto 0 auto;
+  margin: 0 auto !important;
 }
 .single-product .block-right {
   overflow: hidden;
   position: relative;
-  padding: 8% 0 0 35px;
+  padding: 0 0 0 35px !important;
+  height: 765px;
+}
+.single-product .block-right .wrap-cat-cart {
+  position: absolute;
+  bottom: 0;
 }
 .single-product .block-right h3 {
   color: #ddd;
@@ -587,16 +600,20 @@ footer .soc-network a {
 .single-product .block-right h2 {
   font-size: 60px !important;
 }
-.single-product .block-right .dop-info a {
+.single-product .block-right .dop-info {
+  padding-top: 24%;
+}
+.single-product .block-right a {
   display: block;
   font-size: 16px;
   padding-bottom: 20px;
 }
 .single-product .cat-and-title {
   margin: 30% 0 0 0;
+  margin: 0 !important;
 }
 .single-product .wrap-price-cart {
-  margin-top: 130px;
+  margin-top: 110px;
 }
 .single-product .wrap-price-cart p {
   margin-bottom: 25px;
