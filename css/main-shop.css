@@ -89,9 +89,10 @@ h2, h2 a {
   border-radius: 17px;
   width: 35px;
   height: 35px;
-  padding: 8px 7px 0 0;
+  padding: 8px 4px 0 0;
   font-weight: bold;
   font: 16px "Montserrat";
+  letter-spacing: 2px;
 }
 .header-top .profile {
   background: url("../img/shop/profile.png") no-repeat;
@@ -665,7 +666,7 @@ footer .soc-network a {
   background: #000;
   border-radius: 5px;
 }
-.cart-page .del-product {
+.cart-page .del-product, .cart-page .price a.remove-prod {
   float: right;
   padding-right: 50px;
   padding-top: 4px;
@@ -695,13 +696,14 @@ footer .soc-network a {
   padding-left: 20px;
   font-weight: bold;
 }
-.cart-page .proc-checkout {
-  background: #000;
+.cart-page .proc-checkout, .cart-page .button {
+  background: #000 !important;
   padding: 15px 40px;
   color: #fff;
   display: table;
   float: right;
   margin-top: -20px;
+  color: #fff !important;
 }
 .cart-page .wrap_quantity {
   border: 1px solid #ccc;
@@ -741,6 +743,56 @@ footer .soc-network a {
   background: #000;
   padding-left: 20px !important;
   width: 30%;
+}
+
+input, select {
+  border: 0;
+  outline: 0;
+  display: block;
+  font: bold 16px "Montserrat-Light";
+  text-transform: lowercase !important;
+  padding: 10px 15px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  color: #9a9a9a;
+}
+
+.woocommerce {
+  padding: 50px 30px;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.login {
+  padding: 0 15px;
+}
+
+label {
+  font: 16px "Montserrat";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 20px;
+}
+
+.button {
+  float: none !important;
+  margin-top: 45px !important;
+  letter-spacing: 6px;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+}
+
+.woocommerce-checkout {
+  overflow: hidden;
+  margin: 50px 0;
+}
+.woocommerce-checkout .name-phone-email *, .woocommerce-checkout .country-city-zip * {
+  width: 100%;
+}
+.woocommerce-checkout .name-phone-email p, .woocommerce-checkout .country-city-zip p {
+  float: left;
 }
 
 /*# sourceMappingURL=main-shop.css.map */

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Meta -->
+	<meta charset="utf-8" />
+	<title>site</title>
+	<meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+
+	<link rel="stylesheet" href="css/main-shop.css" />
+	<link rel="stylesheet" href="css/media-shop.css" />
+	<link rel="stylesheet" href="libs/grayscale2/css/grayscale.css" />
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .ie-gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+</head>
+<body>
+		
+<div class="alex-wrap cart-page">
+
+	<nav class="top-menu hidden-xs hidden-sm">
+		<img class="close-top-menu" src="img/close.jpg" alt="">
+		<ul class="list-inline">
+			<li> 
+				 <span class="vert-line"></span>
+				 <a href="index.html">home </a>
+				 <span class="vert-line"></span>						 
+			</li>
+			<li>
+				 <span class="vert-line"></span>						 					
+				<a href="bio.html">bio</a>
+				 <span class="vert-line"></span>						 
+			</li>
+			<li>
+				 <span class="vert-line"></span>						 
+				<a href="media.html">media</a>
+				 <span class="vert-line"></span>						 
+			</li>
+			<li>
+				 <span class="vert-line"></span>						 
+				<a href="gallery.html">gallery</a>
+				 <span class="vert-line"></span>						 
+			</li>
+			<li>
+				 <span class="vert-line"></span>						 
+				<a href="">blog</a>
+				 <span class="vert-line"></span>						 
+			</li>
+			<li>
+				 <span class="vert-line"></span>						 
+				<a href="">contact</a>
+				 <span class="vert-line"></span>						 
+			</li>
+		</ul>			                         
+	</nav>	
+
+	<nav class="mob-menu hidden-lg hidden-md">
+		<img class="close-mob-menu" src="img/close.jpg" alt="">
+		<ul class="list-unstyled">
+			<li> 
+				 <a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="bio.html">bio</a>
+			</li>
+			<li>
+				<a href="media.html">media</a>
+			</li>
+			<li>
+				<a href="gallery.html">gallery</a>
+			</li>
+			<li>
+				<a href="">blog</a>
+			</li>
+			<li>
+				<a href="">contact</a>
+			</li>
+		</ul>			                         
+	</nav>
+
+	<header>
+
+		<div class="header-top">
+			<div class="col-md-1 col-sm-2 col-xs-2 shop-btn-mobile"><img class="hidden-lg" src="img/black-top-btn.png" alt=""></div>
+			<div class="col-md-9 col-sm-8 col-xs-8 ">	<h1 class="main-name">Fernanda romero</h1></div>
+			<div class="col-md-2 col-sm-2 col-xs-2 padding-left-del text-right">
+				<div class="cart"><span>01</span></div>
+				<div class="profile hidden-sm hidden-xs "></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	</header>
+	
+
+	<div class="col-lg-1 hidden-md hidden-sm hidden-xs shop-big-menu-btn">
+		<img src="img/shop/shop-big-menu-btn.png" alt="">
+	</div>
+
+	<div class="col-lg-10 col-md-12 shop-wrap-padding">
+
+		<form method="post" class="login" >
+
+		
+			<p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.</p>
+
+			<p class="form-row form-row-first">
+				<label for="username">email <span class="required"></span></label>
+				<input type="text" class="input-text" name="username" id="username" placeholder="user@gmail.com" />
+			</p>
+			<p class="form-row form-row-last">
+				<label for="password">Password <span class="required"></span></label>
+				<input class="input-text" type="password" name="password" id="password" />
+			</p>
+			<div class="clear"></div>
+
+			
+			<p class="form-row">
+				<input type="hidden" id="_wpnonce" name="_wpnonce" value="e464765122" /><input type="hidden" name="_wp_http_referer" value="/checkout/" />		<input type="submit" class="button" name="login" value="Login" />
+				<input type="hidden" name="redirect" value="http://wp-soho/checkout/" />
+	<!-- 			<label for="rememberme" class="inline">
+					<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember me		</label>
+	 -->		</p>
+	<!-- 		<p class="lost_password">
+				<a href="http://wp-soho/my-account/lost-password/">Lost your password?</a>
+			</p> -->
+
+		
+		</form>
+
+
+		<form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://wp-soho/checkout/" enctype="multipart/form-data">
+
+	        <div class="col-md-8 woocommerce-billing-fields">
+	
+		<div class="col-md-6 name-phone-email">
+		<div class="row">
+		<p class="form-row form-row form-row-first validate-required" id="billing_first_name_field"><label for="billing_first_name" class="">First Name <abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="Denis"  autocomplete="given-name" value=""  /></p>
+		</div>
+		</div>
+
+		<div class="col-md-6 name-phone-email">
+		<div class="row">
+	
+		<p class=" form-row form-row form-row-last validate-required" id="billing_last_name_field"><label for="billing_last_name" class="">Last Name <abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="Shepovalov"  autocomplete="family-name" value=""  /></p>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="col-md-6 name-phone-email">
+		<div class="row">
+		
+		<p class=" form-row form-row form-row-last validate-required validate-phone" id="billing_phone_field"><label for="billing_phone" class="">Phone <abbr class="required" title="required"></abbr></label><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="555 465 2175"  autocomplete="tel" value=""  /></p>
+		</div>
+		</div>
+		<div class="col-md-6 name-phone-email">
+		<div class="row">
+
+		<p class="form-row form-row form-row-first validate-required validate-email" id="billing_email_field"><label for="billing_email" class="">E-mail  <abbr class="required" title="required"></abbr></label><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="your@eamil.com"  autocomplete="email" value=""  /></p>
+		</div>
+		</div>
+
+		<div class="clearfix"></div>
+	
+		<div class="col-md-4 country-city-zip">
+		<div class="row">
+		<p class="form-row form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field"><label for="billing_country" class="">Country <abbr class="required" title="required"></abbr></label><select name="billing_country" id="billing_country" autocomplete="country" class="country_to_state country_select " ><option value="">Select a country&hellip;</option><option value="AX" >&#197;land Islands</option><option value="AF" >Afghanistan</option><option value="AL" >Albania</option><option value="DZ" >Algeria</option><option value="AS" >American Samoa</option><option value="AD" >Andorra</option><option value="AO"  value="AI" >Anguilla</option></select><noscript><input type="submit" name="woocommerce_checkout_update_totals" value="Update country" /></noscript></p>
+		</div>	
+		</div>
+		<div class="col-md-4 country-city-zip">
+		<div class="row">	
+		<p class="form-row form-row form-row-wide address-field validate-required" id="billing_city_field"><label for="billing_city" class="">City <abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="California"  autocomplete="address-level2" value=""  /></p>
+		</div>	
+		</div>
+
+		<div class="col-md-4 country-city-zip">
+		<div class="row">	
+		<p class="form-row form-row form-row-last address-field validate-required validate-postcode" id="billing_postcode_field"><label for="billing_postcode" class="">ZIP <abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_postcode" id="billing_postcode"  autocomplete="postal-code" value="" placeholder="123456"  /></p>
+		</div>	
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-md-4 country-city-zip">
+		<div class="row">			
+		<p class="form-row form-row form-row-first address-field validate-required validate-state" id="billing_state_field"><label for="billing_state" class="">State <abbr class="required" title="required"></abbr></label><select name="billing_state" id="billing_state" class="state_select "  data-placeholder="" autocomplete="address-level1">
+		<option value="">Select a state&hellip;</option><option value="AL"  selected='selected'>Alabama</option><option value="AK" >Alaska</option><option value="AZ" >Arizona</option></select></p>
+		</div>	
+		</div>
+
+		<div class="col-md-4 country-city-zip">
+		<div class="row">	
+
+		<p class="form-row form-row form-row-wide address-field validate-required" id="billing_address_1_field"><label for="billing_address_1" class="">Address <abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="Street address"  autocomplete="address-line1" value=""  /></p>
+		</div>	
+		</div>
+
+		<div class="col-md-4 country-city-zip">
+		<div class="row">	
+
+		<p class="form-row form-row form-row-wide address-field" id="billing_address_2_field">
+		<label for="" class="hidden-xs hidden-sm"> &nbsp;<abbr class="required" title="required"></abbr></label><input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="Apartment, suite, unit etc. (optional)"  autocomplete="address-line2" value=""  /></p>
+	
+		</div>	
+		</div>
+
+	
+	</div>
+	</form>
+	
+
+	</div>
+
+
+
+
+<div class="clearfix"></div>
+
+<footer class="hidden-lg hidden-md hidden-sm">
+	<div class="container">
+		<div class="col-md-12">
+			
+			<div class="soc-network">
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+
+			<ul class="foot-menu list-inline">
+				<li> 
+					 <a href="index.html">home </a>
+				</li>
+				<li>
+					<a href="bio.html">bio</a>
+				</li>
+				<li>
+					<a href="media.html">media</a>
+				</li>
+				<li>
+					<a href="gallery.html">gallery</a>
+				</li>
+				<li>
+					<a href="">blog</a>
+				</li>
+				<li>
+					<a href="">contact</a>
+				</li>
+			</ul>	
+
+		</div>
+	</div>
+</footer>
+
+
+</div>
+
+ <!-- <script src="libs/jquery/jquery1.11.0.min.js"></script> -->
+<script type='text/javascript' src="libs/jquery/jquery_1.8.3.min.js"></script>
+<script src="libs/owl-carousel/owl.carousel.js"></script>
+
+
+<script src="js/common.js"></script>	
+ <script type='text/javascript' src='libs/grayscale2/js/modernizr.custom.js'></script>
+<script type='text/javascript' src='libs/grayscale2/js/imagesloaded.pkgd.min.js'></script>
+<script type='text/javascript' src='libs/grayscale2/js/grayscale.js'></script>
+<script type='text/javascript' src="libs/grayscale2/js/functions.js"></script>
+
+</body>
+</html>

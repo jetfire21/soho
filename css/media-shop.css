@@ -468,7 +468,12 @@
       display: none;
   }
 
-}@media only screen and (min-width : 1200px) {
+}
+
+@media only screen and (min-width : 1367px) {
+  .shop-wrap-padding{ padding-left: 40px; }
+}
+@media only screen and (min-width : 1200px) {
 
    #owl-shop-products{ padding-left: 30px; }
 }

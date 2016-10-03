@@ -80,9 +80,11 @@ h2, h2 a
 			border-radius: 17px
 			width: 35px
 			height: 35px
-			padding: 8px 7px 0 0
+			padding: 8px 4px 0 0
+			// padding: 8px 7px 0 0
 			font-weight: bold
 			font: 16px "Montserrat"
+			letter-spacing: 2px
 
 	.profile
 		background: url("../img/shop/profile.png") no-repeat
@@ -732,11 +734,13 @@ footer
 				background: #000
 				border-radius: 5px
 
-	.del-product
+	.del-product, .price a.remove-prod
 		float: right
 		padding-right: 50px
 		padding-top: 4px
 		cursor: pointer
+
+		// background: url("../img/shop/close_icon.png") no-repeat !important
 		
 
 	.cart-img
@@ -763,13 +767,14 @@ footer
 			padding-left: 20px
 			font-weight: bold
 
-	.proc-checkout
-		background: #000
+	.proc-checkout, .button
+		background: #000 !important
 		padding: 15px 40px
 		color: #fff
 		display: table
 		float: right
 		margin-top: -20px
+		color: #fff !important
 
 	.wrap_quantity
 		border: 1px solid #ccc
@@ -811,3 +816,54 @@ footer
 		background: #000
 		padding-left: 20px !important
 		width: 30%
+
+
+
+
+input,select
+	border: 0
+	outline: 0
+	display: block
+	font: bold 16px "Montserrat-Light" 
+	text-transform: lowercase !important
+	padding: 10px 15px
+	background: #f2f2f2
+	border-radius: 5px
+	color: #9a9a9a
+
+
+.woocommerce
+	padding: 50px 30px
+	min-height: 480px
+	overflow: hidden
+
+.login
+	padding: 0 15px
+	
+label 
+	font: 16px "Montserrat"
+	color: #000
+	text-transform: uppercase
+	letter-spacing: 6px
+	margin-top: 20px
+
+.button
+	float: none !important
+	margin-top: 45px !important
+	letter-spacing: 6px
+	text-transform: uppercase !important
+	border-radius: 0 !important
+	font-size: 16px !important
+
+.woocommerce-checkout
+	overflow: hidden
+	margin: 50px 0
+	
+	.name-phone-email *, .country-city-zip *
+		width: 100%
+	
+	.name-phone-email p, .country-city-zip p
+		float: left
+
+	.name-phone-email input 
+		// width: 370px

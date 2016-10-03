@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAW;EACV,MAAM,EAAE,cAAc;EACtB,SAAS,EAAE,IAAI;;;AAChB,CAAC;EAEA,KAAK,EAAE,IAAI",
+"mappings": "AAAA,CAAW;EACV,MAAM,EAAE,cAAc;EACtB,SAAS,EAAE,IAAI;;AAChB,CAAC;EAEA,KAAK,EAAE,IAAI",
 "sources": ["../sass/test.sass"],
 "names": [],
 "file": "test.css"
